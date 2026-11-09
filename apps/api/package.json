@@ -19,7 +19,7 @@
     "@sidequest/db": "workspace:*",
     "@sidequest/domain": "workspace:*",
     "@sidequest/observability": "workspace:*",
-    "fastify": "^5.12.6",
+    "fastify": "^5.12.8",
     "fastify-plugin": "^6.0.0",
     "ioredis": "^6.0.0",
     "jose": "^6.2.12",
