@@ -10,6 +10,7 @@ describe('secure API origin configuration', () => {
     'http://api.sidequest.co.ke',
     'https://localhost:3000',
     'https://127.0.0.1:3000',
+    'https://[::1]:3000',
     'https://service.localhost',
     'https://user:password@api.sidequest.co.ke',
     'https://api.sidequest.co.ke/v1',
