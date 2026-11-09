@@ -1,5 +1,41 @@
 ---
 name: Bug report
+<<<<<< audit/community-readiness
+about: Report a reproducible bug or regression
+title: ""
+labels: ["bug"]
+assignees: ""
+---
+
+## Summary
+
+Describe the bug.
+
+## Steps to reproduce
+
+1.
+2.
+3.
+
+## Expected behavior
+
+What should happen?
+
+## Actual behavior
+
+What happened instead?
+
+## Environment
+
+- OS:
+- Node version:
+- pnpm version:
+- Branch/commit:
+
+## Additional context
+
+Add logs, screenshots, or relevant details.
+=======
 about: Create a report to help us improve
 title: ''
 labels: ''
@@ -36,3 +72,4 @@ If applicable, add screenshots to help explain your problem.
 
 **Additional context**
 Add any other context about the problem here.
+>>>>>> main
