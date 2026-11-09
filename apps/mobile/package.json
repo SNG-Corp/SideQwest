@@ -9,7 +9,8 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "typecheck": "tsc --noEmit && tsc --noEmit -p tsconfig.test.json",
-    "test": "jest"
+    "test": "jest",
+    "check:production-config": "node scripts/check-production-config.mjs"
   },
   "dependencies": {
     "@expo-google-fonts/caprasimo": "^0.4.0",
