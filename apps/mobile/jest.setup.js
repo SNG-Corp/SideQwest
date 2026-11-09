@@ -1,4 +1,5 @@
 /* global jest */
+process.env.EXPO_PUBLIC_API_URL = 'https://api.sidequest.co.ke';
 jest.mock('react-native-safe-area-context', () => require('react-native-safe-area-context/jest/mock').default);
 jest.mock('expo-router', () => ({ router: { push: jest.fn(), back: jest.fn(), replace: jest.fn(), canGoBack: () => true } }));
 // jest-expo's expo-crypto mock returns undefined; idempotency keys must be real UUIDs even here.

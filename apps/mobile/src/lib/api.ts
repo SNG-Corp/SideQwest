@@ -7,9 +7,12 @@ import Constants from 'expo-constants';
 import * as Crypto from 'expo-crypto';
 import type { Problem, Session } from '@sidequest/contracts';
 import { useSession } from './session';
+import { secureApiUrl } from './api-config';
 
-export const API_URL: string =
-  process.env.EXPO_PUBLIC_API_URL ?? (Constants.expoConfig?.extra as { apiUrl?: string } | undefined)?.apiUrl ?? 'http://localhost:3000';
+export const API_URL = secureApiUrl(
+  process.env.EXPO_PUBLIC_API_URL
+    ?? (Constants.expoConfig?.extra as { apiUrl?: string } | undefined)?.apiUrl,
+);
 
 export class ApiError extends Error {
   constructor(readonly status: number, readonly code: string, message: string, readonly details?: Record<string, unknown>) {

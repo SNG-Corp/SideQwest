@@ -13,12 +13,14 @@
       "supportsTablet": false,
       "bundleIdentifier": "ke.co.sidequest.app",
       "infoPlist": {
+        "NSAppTransportSecurity": { "NSAllowsArbitraryLoads": false, "NSAllowsArbitraryLoadsInWebContent": false },
         "NSCameraUsageDescription": "Side Qwest uses the camera to photograph goods at each stall and to scan the handover code.",
         "NSLocationWhenInUseUsageDescription": "Your location is shared with the other person on an errand only while it is running."
       }
     },
     "android": {
       "package": "ke.co.sidequest.app",
+      "usesCleartextTraffic": false,
       "adaptiveIcon": {
         "backgroundColor": "#f5ead8",
         "foregroundImage": "./assets/android-icon-foreground.png",
@@ -38,6 +40,6 @@
       "expo-localization"
     ],
     "experiments": { "typedRoutes": false },
-    "extra": { "apiUrl": "http://localhost:3000" }
+    "extra": { "apiUrl": "https://api.sidequest.co.ke" }
   }
 }
