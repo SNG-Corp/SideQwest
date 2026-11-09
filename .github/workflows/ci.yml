@@ -81,6 +81,8 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: '${{ env.NODE_VERSION }}', cache: pnpm }
       - run: pnpm install --frozen-lockfile
+      - name: mobile production config is HTTPS-only
+        run: pnpm --filter @sidequest/mobile check:production-config
       # Every parity test runs twice, under jest-expo's ios and android presets.
       - run: pnpm --filter @sidequest/mobile test --ci
 
