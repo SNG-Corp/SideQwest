@@ -7,9 +7,11 @@ import Constants from 'expo-constants';
 import * as Crypto from 'expo-crypto';
 import type { Problem, Session } from '@sidequest/contracts';
 import { useSession } from './session';
+import { resolveApiUrl } from './api-config';
 
-export const API_URL: string =
-  process.env.EXPO_PUBLIC_API_URL ?? (Constants.expoConfig?.extra as { apiUrl?: string } | undefined)?.apiUrl ?? 'http://localhost:3000';
+const configuredApiUrl = process.env.EXPO_PUBLIC_API_URL
+  ?? (Constants.expoConfig?.extra as { apiUrl?: string } | undefined)?.apiUrl;
+export const API_URL = resolveApiUrl(configuredApiUrl, __DEV__);
 
 export class ApiError extends Error {
   constructor(readonly status: number, readonly code: string, message: string, readonly details?: Record<string, unknown>) {
@@ -78,7 +80,13 @@ async function request<T>(method: string, path: string, body?: unknown, opts: Re
   }
   if (res.status === 204) return undefined as T;
   const text = await res.text();
-  const json = text ? JSON.parse(text) : null;
+  let json: unknown = null;
+  if (text) {
+    try { json = JSON.parse(text); } catch {
+      if (!res.ok) throw new ApiError(res.status, 'INVALID_ERROR_RESPONSE', 'The server returned an invalid error response');
+      throw new ApiError(res.status, 'INVALID_RESPONSE', 'The server returned an invalid response');
+    }
+  }
   if (!res.ok) {
     const p = json as Problem | null;
     throw new ApiError(res.status, p?.code ?? 'UNKNOWN', p?.title ?? 'Request failed', p?.details);
