@@ -1,41 +1,23 @@
 # Side Qwest
 
-Errands in Nairobi, paid through escrow: a requester posts a Qwest, a runner does it stall by stall, and every shilling moves through a double-entry ledger.
+Side Qwest is an MVP for Nairobi errands: requesters fund tasks through escrow, runners complete them stall by stall, and money movements are tracked in a double-entry ledger. This monorepo contains the Expo mobile app, Fastify API, background worker, Next.js operations console, database migrations, and integration tests.
 
-![CI](https://github.com/SNG-Corp/SideQwest/actions/workflows/ci.yml/badge.svg)
-![License](https://img.shields.io/github/license/SNG-Corp/SideQwest)
-![Issues](https://img.shields.io/github/issues/SNG-Corp/SideQwest)
+> **Release status:** This repository is an MVP, not a declaration of production or store approval. The README documents untested payment/storage provider sandboxes and the absence of native store builds. See [mobile release readiness](docs/MOBILE_RELEASE_READINESS.md) before any store submission or handling of live funds or real KYC data.
 
-This repository contains the MVP implementation for the Side Qwest marketplace platform, including the mobile app, API, worker, console, Postgres-backed ledger, and the operational tooling needed to run and validate the money flow.
+## Repository map
 
-## Why Side Qwest
-
-Side Qwest is designed for underserved urban communities where trust, transaction transparency, and real-time task execution matter. It combines escrowed payments, KYC-aware operations, small task execution, and auditable ledger accounting into a single platform.
-
-## Sponsors
-
-This project is looking for support to help cover infrastructure, security auditing, compliance review, and ongoing maintenance.
-
-- GitHub Sponsors: [@Apekay2](https://github.com/sponsors/Apekay2)
-- Open Collective: [replace with your project name](https://opencollective.com/replace-me)
-- Ko-fi: [replace with your project page](https://ko-fi.com/replace-me)
-
-If you are interested in sponsoring the project, please review [FUNDING.yml](./FUNDING.yml) and [ROADMAP.md](./ROADMAP.md).
-
-## Architecture at a glance
-
-| Part | Where | What it is |
+| Component | Location | Role |
 |---|---|---|
-| Mobile app | `apps/mobile` | Expo SDK 57 / expo-router, requester and runner, EN + SW. |
-| API | `apps/api` | Fastify 5 service with Postgres RLS and actor-scoped access. |
-| Worker | `apps/worker` | Outbox poller, job runners, settlement, reconciliation, and notifications. |
-| Ops console | `apps/console` | Next.js console for KYC, disputes, rulings, money trace. |
-| Packages | `packages/*` | Domain logic, DB schema, config, adapters, observability, contracts. |
-| End-to-end tests | `tests/e2e` | API + worker integration tests against Postgres and Redis. |
+| Mobile | `apps/mobile` | Expo/React Native requester and runner app; English and Kiswahili |
+| API | `apps/api` | Fastify API; actor-scoped Postgres access and row-level security |
+| Worker | `apps/worker` | Outbox processing, payments, settlement, notifications, reconciliation |
+| Operations console | `apps/console` | Next.js KYC, dispute, ruling, and money-trace tools |
+| Shared packages | `packages/*` | Domain rules, database migrations, configuration, adapters, contracts, observability |
+| Tests | `tests/e2e` and app/package tests | Unit, platform-parity, security, and integration coverage |
 
-## Run it
+## Local development
 
-You need Node 22, pnpm 10, Postgres 16 with PostGIS and h3, and Redis 7.
+Prerequisites: Node.js 22, pnpm 10, Postgres 16 with PostGIS and H3, and Redis 7. Alternatively, Docker Compose runs the development stack.
 
 ```sh
 pnpm install
@@ -47,48 +29,29 @@ pnpm dev:console
 pnpm dev:mobile
 ```
 
-Development drivers stand in for the outside world: a fake Daraja flow, mock card issuer, Console SMS, and local storage with signed URLs. Production config refuses those drivers.
+The local environment generator uses development-only drivers. Never point those credentials or drivers at production. For the complete environment variable contract, see `.env.example` and `packages/config/src/env.ts`.
 
-## Check it
+## Verification
 
 ```sh
 pnpm verify
-pnpm typecheck
-pnpm test
-pnpm lint:parity
-DATABASE_URL=<owner url> pnpm db:gates
+DATABASE_URL=<owner-database-url> pnpm db:gates
 ```
 
-CI runs the typecheck, parity, database gates, secret scans, and dependency checks. See `.github/workflows/ci.yml`.
+CI is defined in [`.github/workflows/ci.yml`](.github/workflows/ci.yml). It runs type checking, tests, platform/i18n parity checks, database gates, security/dependency scans, and container builds.
 
-## Contributing
+## Security, privacy, and release
 
-We welcome thoughtful contributors. Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before opening a PR.
+- Report vulnerabilities privately; instructions are in [SECURITY.md](SECURITY.md).
+- The current data-flow review is a **draft for counsel and maintainer validation**, not a privacy policy: [privacy data inventory](docs/PRIVACY_DATA_INVENTORY_DRAFT.md).
+- Store-build and operational gates are in [mobile release readiness](docs/MOBILE_RELEASE_READINESS.md).
+- For support, see [SUPPORT.md](SUPPORT.md); for contributions, see [CONTRIBUTING.md](CONTRIBUTING.md).
+- The project is licensed under the [MIT License](LICENSE).
 
-## Security
+## Funding
 
-Please report vulnerabilities privately. See [SECURITY.md](./SECURITY.md) for the disclosure process.
+If you find the project useful, you can support its continued maintenance through [GitHub Sponsors](https://github.com/sponsors/Apekay2), subject to the maintainer's Sponsors account being enabled. We do not list unverified third-party funding destinations.
 
-## Support
+## Project documentation
 
-For support and questions, see [SUPPORT.md](./SUPPORT.md).
-
-## Code of conduct
-
-This project follows a community code of conduct. See [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md).
-
-## License
-
-This project is licensed under the MIT License. See [LICENSE](./LICENSE).
-
-## Roadmap
-
-See [ROADMAP.md](./ROADMAP.md) for current product and maintenance priorities.
-
-## Project history
-
-The original handoff materials are preserved in [HANDOFF.md](./HANDOFF.md) and `project/handoff_sidequest_mvp/`.
-
----
-
-This README intentionally provides both technical onboarding and the project’s public trust signals. If you are preparing for launch or sponsorship outreach, keep this section concise, accurate, and active.
+The design and engineering handoff is preserved under `project/handoff_sidequest_mvp/`. It is historical reference material; use the current code, migrations, and CI as the source of truth for implementation status.

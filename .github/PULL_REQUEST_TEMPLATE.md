@@ -1,13 +1,12 @@
 ## Summary
 
-Describe the change.
+## User impact and risk
 
-## Testing
+## Validation
 
-- [ ] I ran the relevant checks locally
-- [ ] I added or updated tests where appropriate
-- [ ] I documented the change if needed
+- [ ] I ran relevant tests/checks
+- [ ] I added or updated tests for behavior changes
+- [ ] I checked privacy/security implications (especially for location, identity, payments)
+- [ ] I updated documentation where needed
 
-## Notes
-
-Add any additional context for reviewers.
+## Reviewer notes

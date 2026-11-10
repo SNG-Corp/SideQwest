@@ -1,6 +1,6 @@
 # Privacy data inventory — implementation review draft
 
-**Status: draft for product, privacy counsel, and data-protection officer review. Not a privacy policy and not ready to publish as a legal notice.** Confirm actual deployed behavior and vendors before using this inventory for store disclosures.
+**Status: draft for product, privacy counsel, and maintainer validation. Not a privacy policy and not ready to publish as a legal notice.** Confirm actual deployed behavior and vendors before using this inventory for store disclosures.
 
 ## Data flows visible in the reviewed source
 
