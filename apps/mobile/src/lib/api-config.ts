@@ -1,13 +1,21 @@
-export function secureApiUrl(configured: string | undefined): string {
-  if (!configured) throw new Error('EXPO_PUBLIC_API_URL or expo.extra.apiUrl must configure the API origin');
+const DEVELOPMENT_API_URL = 'http://localhost:3000';
+
+export function resolveApiUrl(configured: string | undefined, isDevelopment: boolean): string {
+  const candidate = configured?.trim();
+  if (!candidate) {
+    if (isDevelopment) return DEVELOPMENT_API_URL;
+    throw new Error('EXPO_PUBLIC_API_URL is required outside development.');
+  }
+
   let url: URL;
-  try { url = new URL(configured); } catch {
-    throw new Error('The API origin must be a valid HTTPS URL');
+  try {
+    url = new URL(candidate);
+  } catch {
+    throw new Error('EXPO_PUBLIC_API_URL must be an absolute URL.');
   }
-  const host = url.hostname.toLowerCase().replace(/^\[|\]$/g, '');
-  if (url.protocol !== 'https:' || url.username || url.password || url.pathname !== '/' || url.search || url.hash
-    || host === 'localhost' || host.endsWith('.localhost') || host === '::1' || host === '0.0.0.0' || /^127\./.test(host)) {
-    throw new Error('The API origin must be HTTPS and must not use a local host');
+
+  if (url.protocol !== 'https:' || url.username || url.password || url.hostname === 'localhost') {
+    throw new Error('EXPO_PUBLIC_API_URL must be HTTPS and must not contain credentials or use localhost.');
   }
-  return url.origin;
+  return url.toString().replace(/\/$/, '');
 }
