@@ -150,7 +150,7 @@ importers:
         version: 5.104.0(react@19.2.3)
       expo:
         specifier: ~57.0.26
-        version: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(@expo/metro-runtime@57.0.16)(expo-router@57.0.24)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
+        version: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(expo-router@58.0.30)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
       expo-camera:
         specifier: ~57.0.6
         version: 57.0.6(@types/emscripten@1.41.6)(expo@57.0.26)(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)
@@ -176,8 +176,8 @@ importers:
         specifier: ~57.0.20
         version: 57.0.20(expo@57.0.26)(typescript@6.0.3)
       expo-router:
-        specifier: ~57.0.24
-        version: 57.0.24(4df1b54414c35a0cddb53de35cd1b061)
+        specifier: ~58.0.30
+        version: 58.0.30(5ba68bd2cc6a6bd68e0bb968d2e7d736)
       expo-secure-store:
         specifier: ~58.0.2
         version: 58.0.2(expo@57.0.26)
@@ -1129,9 +1129,6 @@ packages:
   '@expo-google-fonts/figtree@0.4.1':
     resolution: {integrity: sha512-6IQQddGeR3yZBSwiIjy2kd1gA+5s2esF8JAFw6M1qqU4RUlj4Zxkw9J+gixAtZFgd+QIS875EPHqeYlpaRcCRw==}
 
-  '@expo-google-fonts/material-symbols@0.4.48':
-    resolution: {integrity: sha512-aZztj44PyA/sj3TXSwwpLJwqMlTUJ49okbZJYURzEcuERxMQB0KbX7RrLBi8WJnuWz5HFOLlTRxORrJfNnUPNQ==}
-
   '@expo/cli@57.0.27':
     resolution: {integrity: sha512-Jauk4chxmpVG5ElrMLTCwjFP20jbYU7PB4l3LYV8j+4e/3HU5jdl7qTQ4eVy1AaDUE9Ia2NCQ5A9kar2V1gaLg==}
     hasBin: true
@@ -1220,18 +1217,6 @@ packages:
   '@expo/metro-file-map@57.0.3':
     resolution: {integrity: sha512-1OXy+uPYY5uc7Tm4VBsd2NRn+3wHhqeqNuEO/Xo4kmYgv8FjYgUAc+bUXON9FpC2ikcLn4EVlGM9ce2exx9Mlg==}
 
-  '@expo/metro-runtime@57.0.16':
-    resolution: {integrity: sha512-x43WgZoICpp37BhDV7vixe0bNxbVPPGaBLHYc98ZJ8MU+UC2dk39Y2XvkfYMRRbAUSIkCIJiwdERnptlPg0Ckw==}
-    peerDependencies:
-      '@expo/log-box': ^57.0.4
-      expo: '*'
-      react: '*'
-      react-dom: '*'
-      react-native: '*'
-    peerDependenciesMeta:
-      react-dom:
-        optional: true
-
   '@expo/metro@56.0.2':
     resolution: {integrity: sha512-Ld5AeYMCCDa8bLeWhfuLbZFFjlV3f6ORqyPz2glGh6RltIngMuLf9BTC2yvHFjkKuGxL5SynijmA8xmNNWn5iA==}
 
@@ -1278,8 +1263,11 @@ packages:
       react-server-dom-webpack:
         optional: true
 
-  '@expo/schema-utils@57.0.2':
-    resolution: {integrity: sha512-fMu/jyN0l1Wzv7XkeWR4IYCx1M8ryui3FdBNGrWwbRgJ7EhxXxK8E2jxP2W3pbgUwUY0V3hG8+GyfCZwny+Lxw==}
+  '@expo/schema-utils@57.0.3':
+    resolution: {integrity: sha512-HcxLkgZbutEjhMVqOPw+MsSjQSqLLG6KtdjbNltms5AN7LibbGe32ae8TRnjeRcelE0+dGOdjdby8seGAO01IQ==}
+
+  '@expo/schema-utils@58.0.3':
+    resolution: {integrity: sha512-DwoMEpT3H+r1lU+YUEP10UcUW7sDKmfvgE7oA+zQeuGyi0XxDSDgRZUUZ5nOGp+lymmTicoIUKkoN7rByuI04g==}
 
   '@expo/sdk-runtime-versions@1.0.0':
     resolution: {integrity: sha512-Doz2bfiPndXYFPMRwPyGa1k5QaKDVpY806UJj570epIiMzWaYyCtobasyfC++qfIXVb5Ocy7r3tP9d62hAQ7IQ==}
@@ -1290,23 +1278,6 @@ packages:
 
   '@expo/sudo-prompt@9.3.2':
     resolution: {integrity: sha512-HHQigo3rQWKMDzYDLkubN5WQOYXJJE2eNqIQC2axC2iO3mHdwnIR7FgZVvHWtBwAdzBgAP0ECp8KqS8TiMKvgw==}
-
-  '@expo/ui@57.0.21':
-    resolution: {integrity: sha512-4s1ypGNxJhJv2r1fj3wZo4Aubao0zGnCajCuiaTp8pTNrT+1vR8KvyoFEwp+c7gpKm2D58nGCiGBXhEnmKHtDQ==}
-    peerDependencies:
-      '@babel/core': '*'
-      expo: '*'
-      react: '*'
-      react-dom: '*'
-      react-native: '*'
-      react-native-worklets: '*'
-    peerDependenciesMeta:
-      '@babel/core':
-        optional: true
-      react-dom:
-        optional: true
-      react-native-worklets:
-        optional: true
 
   '@expo/ws-tunnel@2.0.0':
     resolution: {integrity: sha512-j+JfTRdCk820J9dU0sA2SqshQIKFOMo7ED84w9MJFcebfbNQgsLztEY/SABDkGnjatrW4xGqnUhVRxSBVyCkXw==}
@@ -1871,11 +1842,11 @@ packages:
     resolution: {integrity: sha512-SEeaJLb3qBNF/OaXnaR1NmmBbFYk1zC0ZH/52fATcRPLFg/p791YrcyFFy44Bo9sLaGuSuLp5Q6axbb/O+v/RA==}
     engines: {node: ^14.18.0 || >=16.0.0}
 
-  '@radix-ui/primitive@1.1.7':
-    resolution: {integrity: sha512-rqWnm76nYT8HoNNqEjpgJ7Pw/DrBj5iBTrmEPo6HTX5+VJyBNOqTdv4g89G63HuR5g0AaENoAcH7Is5fF2kZ8Q==}
+  '@radix-ui/primitive@1.2.0':
+    resolution: {integrity: sha512-KABY+VMIRPJL+Vyzv/335FEhXXD/xDv8BMb1kl48/aXJZMH0LtHCTx5ga5RnxaEP3nZHtmTLf1P9vanmFX46bw==}
 
-  '@radix-ui/react-collection@1.1.15':
-    resolution: {integrity: sha512-9W+B9NPF0NaaPh/1NJd3+KqsnlLqU9H7T2rvww+fp+T/evVXdNAyYcnfRQZFOjkR1ajQp3yORlqnI8soawLvNA==}
+  '@radix-ui/react-collection@1.2.0':
+    resolution: {integrity: sha512-+yiQzqcc7Sy7/5s0jrMCjpPRFB3538VNrXPWdTLZhE/SCfgEws4aI6lHWN/vvcnyhHndROWBzqmqB4QBrITZ9Q==}
     peerDependencies:
       '@types/react': '*'
       '@types/react-dom': '*'
@@ -1896,8 +1867,8 @@ packages:
       '@types/react':
         optional: true
 
-  '@radix-ui/react-context@1.2.2':
-    resolution: {integrity: sha512-RHCUGwKHDr0hDGg4X7ma4JG4/+12qxw8rkh5QKdDldlCvtja6nUx1Ef/8HVrJze81lEsgLQlqjzjGNHantgnQA==}
+  '@radix-ui/react-context@1.3.0':
+    resolution: {integrity: sha512-v5AYEocMISkbJ+1fTXzZpiFv7NRr3D2WiYbLIKf+FkmJ8VkP6d503eV2n34MFussHXY1pcoq3yfJiQH77dc4Mg==}
     peerDependencies:
       '@types/react': '*'
       react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
@@ -1905,61 +1876,13 @@ packages:
       '@types/react':
         optional: true
 
-  '@radix-ui/react-dialog@1.1.23':
-    resolution: {integrity: sha512-Ksw4WeROkO4rC9k/onilX/Ao2Cr1ku1unMNH+XSCcP4jSXYu7HDsg9n4ojMjVb22XpYjAQ9qfrFlVbru1vXDUA==}
-    peerDependencies:
-      '@types/react': '*'
-      '@types/react-dom': '*'
-      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-      react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-      '@types/react-dom':
-        optional: true
-
-  '@radix-ui/react-direction@1.1.4':
-    resolution: {integrity: sha512-5pzg4FGQNpExhnhT2zlrP1wZFaYCd1K0nYWoFAdcYoYK868IEigqMX3B3f8yIoRlAhAeDWciLI6ZdCKHF9P4Vg==}
+  '@radix-ui/react-direction@1.2.0':
+    resolution: {integrity: sha512-FtRA52a/r+LKStFT+neLUm+8vSe7wbzkbQGGeU8ixFiwC8NU14Evoq9ATECqL3eGbcUzJR4fyfA4KkK/q6dfqg==}
     peerDependencies:
       '@types/react': '*'
       react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       '@types/react':
-        optional: true
-
-  '@radix-ui/react-dismissable-layer@1.1.19':
-    resolution: {integrity: sha512-8g4pfOL9HoKKLWGiypT+dphVqjFfmcXO5GBnhsG6zI+lxAx/8feQpr+1LSN8Re3hiZ+XkLNS4O9ztK11/LzQ6w==}
-    peerDependencies:
-      '@types/react': '*'
-      '@types/react-dom': '*'
-      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-      react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-      '@types/react-dom':
-        optional: true
-
-  '@radix-ui/react-focus-guards@1.1.6':
-    resolution: {integrity: sha512-RNOJjfZMTyBM6xYmV3IVGXkPjIhcBAuv48POevAXwrGJhkWZ9p1rFoIS1JFooPuT193AZmRsCPhpoVJxx6OPoQ==}
-    peerDependencies:
-      '@types/react': '*'
-      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-
-  '@radix-ui/react-focus-scope@1.1.16':
-    resolution: {integrity: sha512-wmRZ2WWLvmt6KHy2rNPOdPUjwq5xOHY02+m+udwJTn0aNIox/rkskAvJTyTLGhPK6KgrUjlJUJpgmx/+wFiFIQ==}
-    peerDependencies:
-      '@types/react': '*'
-      '@types/react-dom': '*'
-      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-      react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-      '@types/react-dom':
         optional: true
 
   '@radix-ui/react-id@1.1.4':
@@ -1971,8 +1894,8 @@ packages:
       '@types/react':
         optional: true
 
-  '@radix-ui/react-portal@1.1.17':
-    resolution: {integrity: sha512-vKQLcWypUnwZVvfV7UkGahH2g6ySe8M8R+zYBwPrv5byZ9QAW6cQVvNKo7GgmD+p8aYb6D9JBuvy8/WhOno2wQ==}
+  '@radix-ui/react-presence@1.1.11':
+    resolution: {integrity: sha512-Z7/atlkab36Z8hm+V8zYc79r0W+tiOB1o0tun1By94JyadkekLQmtEAnBSP9XKXBNQsStoStS4+gX10JpS5akA==}
     peerDependencies:
       '@types/react': '*'
       '@types/react-dom': '*'
@@ -1984,8 +1907,8 @@ packages:
       '@types/react-dom':
         optional: true
 
-  '@radix-ui/react-presence@1.1.10':
-    resolution: {integrity: sha512-3wyzCQ6+ubRA+D4uv9m95JYLXxmOHp05qjrkjeA7uKHHtjpPggQzc6DAb0URl7j67oR0K2foO4ip27TiX037Bw==}
+  '@radix-ui/react-primitive@2.2.0':
+    resolution: {integrity: sha512-HCTSPMNqv55Qk0IX4geJbpyXazmqulcimwuyjxTkKi29v+QZbG2Zho9BnbBq4YS2PF+KlNb2CXoLz66uUmblkg==}
     peerDependencies:
       '@types/react': '*'
       '@types/react-dom': '*'
@@ -1997,8 +1920,8 @@ packages:
       '@types/react-dom':
         optional: true
 
-  '@radix-ui/react-primitive@2.1.10':
-    resolution: {integrity: sha512-MucOnzh6hR5mid6VpkbglRAMYMjKLqRnGBbjXkzjK52fuQDd1qbkx78a5P40mkcnVXJdEVxm26E9OPAiUq7nBg==}
+  '@radix-ui/react-roving-focus@1.2.1':
+    resolution: {integrity: sha512-UwraORzVUeEPMclhO1p0vz0qI+TbdDLO9i+FiOqhJyHKwdpCRCck9yVEscUnAMIzCiuNoQa8D4A9bIpOPXGt6Q==}
     peerDependencies:
       '@types/react': '*'
       '@types/react-dom': '*'
@@ -2010,8 +1933,17 @@ packages:
       '@types/react-dom':
         optional: true
 
-  '@radix-ui/react-roving-focus@1.1.19':
-    resolution: {integrity: sha512-V9jI6hDjT7l3jsCQD9bLNvDLM3tH/gdbOTp7Tefp3hbbgCGQoK7tUvrWiRlcoBHIZ809ElXwNQwVo0B98LuTXQ==}
+  '@radix-ui/react-slot@1.5.0':
+    resolution: {integrity: sha512-tyYd9ddPXAysAbdbD9eYxgwpCSv6f3PncqVSNKQFSR5lcJVLz3cb/pANDoYrLiHBpXv7skortyUgGUWsYuPPFQ==}
+    peerDependencies:
+      '@types/react': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+
+  '@radix-ui/react-tabs@1.2.1':
+    resolution: {integrity: sha512-hRoJlode+hg5ZNlR+3tkfkUliIybdTpD5lkAvHQ9yaXseGf7XVO9Ib2GPEIOuaJJbo7YWYbNpDDRfo8Dhf6/xA==}
     peerDependencies:
       '@types/react': '*'
       '@types/react-dom': '*'
@@ -2023,8 +1955,8 @@ packages:
       '@types/react-dom':
         optional: true
 
-  '@radix-ui/react-slot@1.3.3':
-    resolution: {integrity: sha512-qx7oqnYbxnK9kYI9m317qmFmEgo6ywqWvbTogdj7cL9p3/yx4M48p7Rnw5z3H890cL/ow/EeWJsuTykeZVXP5Q==}
+  '@radix-ui/react-use-callback-ref@1.1.5':
+    resolution: {integrity: sha512-Y5GBf4NKeADoXI1geiMlMuMoURT3k9MizzzKhGb/m55H94aGigZ01PIpkvsO6lML13BA6XYAXSJ6gza7vTn5nw==}
     peerDependencies:
       '@types/react': '*'
       react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
@@ -2032,30 +1964,8 @@ packages:
       '@types/react':
         optional: true
 
-  '@radix-ui/react-tabs@1.1.21':
-    resolution: {integrity: sha512-UKxJlZid7FVtsk/WTxj4i4uSEgj2Au+KBbS7SQyTlzMhhn+86Cz3tISZdTa87bfEfcuvZezf2ZsxD4xuEKtkog==}
-    peerDependencies:
-      '@types/react': '*'
-      '@types/react-dom': '*'
-      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-      react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-      '@types/react-dom':
-        optional: true
-
-  '@radix-ui/react-use-callback-ref@1.1.4':
-    resolution: {integrity: sha512-R6OUY2e2fA6Yn6s+VSx5KBV6Nx8LQEhu+cz7LCej18rQ1HLyg9PSC9jP/ZNx0o6FAIK9c0F1kHylzSxKsdlkrQ==}
-    peerDependencies:
-      '@types/react': '*'
-      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-
-  '@radix-ui/react-use-controllable-state@1.2.6':
-    resolution: {integrity: sha512-uEQJGT97ZA/TgP/Hydw47lHu+/vQj6z/0jA+WeTbK1o9Rx45GImjpD0tc3W5ad3D6XTSR6e1yEO0FvGq6WQfVQ==}
+  '@radix-ui/react-use-controllable-state@1.3.0':
+    resolution: {integrity: sha512-TAcBI7bw2ljYCbv4+zuTSd6zICu8pRt6SDN2vJ/Z06K2MXh6I9WYFe/A9ovlFDtR5HVHGm5iDxDoABm/++dbKg==}
     peerDependencies:
       '@types/react': '*'
       react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
@@ -2184,6 +2094,9 @@ packages:
   '@react-native/normalize-colors@0.86.3':
     resolution: {integrity: sha512-Cv3CDkprb67GrzuaS9BGbBJC/6G4lIw3nyKOHRKTqTTum4bn37y5+R0Z04L8mcbQN85eEohNrRwb7IOM4j6uvg==}
 
+  '@react-native/normalize-colors@0.88.1':
+    resolution: {integrity: sha512-2SAKiLyZRf+peBLkhhJWGY5vC26w1Uj9QBgUZvjAnOxjgeEKUGBE5riPS0R7+YoqSrRL0w8ucwZB4M+vvy9HMg==}
+
   '@react-native/virtualized-lists@0.86.3':
     resolution: {integrity: sha512-1j44NEyNn05Ut40vHAmoSWbsIcybFkMAOBTwQt1PrESyfSS+qBoyU1LGIogNva0VIa0rQyEC5PzbA7R4/7Nhyw==}
     engines: {node: ^20.19.4 || ^22.13.0 || ^24.3.0 || >= 25.0.0}
@@ -2200,13 +2113,33 @@ packages:
     cpu: [arm]
     os: [android]
 
+  '@rollup/rollup-android-arm-eabi@4.68.0':
+    resolution: {integrity: sha512-Ta2n0ntLfzP0LqwwcXOIh2z0mnHjlxMS+h4Y9lo+w33Quyf9KFKEi9QZ2IKqeEBKr0qxNpXc/DQjz5KVIs8AEA==}
+    cpu: [arm]
+    os: [android]
+
   '@rollup/rollup-android-arm64@4.63.5':
     resolution: {integrity: sha512-LDopB3zuZM5Ux9TT2luNEBJW/tYbGU2g1d+VpKk6I+gSKDb+/7sYE6M225gRQt4RbMX6MSwMsVR/phdjVUgRLg==}
     cpu: [arm64]
     os: [android]
 
+  '@rollup/rollup-android-arm64@4.68.0':
+    resolution: {integrity: sha512-iFDtS0oMaBvKbtrRKXmRcBSsI0UaWL2bWpd62iHzb0A8RSPrVz47mUGE0CfrrD0c/7/7dUhNtoN3cc6aEUn1Ow==}
+    cpu: [arm64]
+    os: [android]
+
+  '@rollup/rollup-android-x64@4.68.0':
+    resolution: {integrity: sha512-OnYETr+cZYSbesBD1tCvUjrBUTkjSaOcewRUoIHqD0XI3yn5i9WpdFaE3LZwrMlq0yeJNU0N5sxfHK/fNVMqlQ==}
+    cpu: [x64]
+    os: [android]
+
   '@rollup/rollup-darwin-arm64@4.63.5':
     resolution: {integrity: sha512-wlJEERGfeuHeBavCL2qVnNacOK43NDoZM4sjkeRPymd04OAE9T1zBqDJgmZ+CIsPTYKwdzpUC8vmOw84dwY4Tg==}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@rollup/rollup-darwin-arm64@4.68.0':
+    resolution: {integrity: sha512-2qavWZtFeon/6oMkjsBF3OH7ENKgRTW4xRTwmz9VJeNUYhmPitpR9Jd4sAAc2OZJryHs2neoovMTCYnNvhvANQ==}
     cpu: [arm64]
     os: [darwin]
 
@@ -2215,8 +2148,18 @@ packages:
     cpu: [x64]
     os: [darwin]
 
+  '@rollup/rollup-darwin-x64@4.68.0':
+    resolution: {integrity: sha512-QpgJO+GwNQDPt6uYcFSjZTFVyHNIeumN2am7RISDR9Nf3e/h8sur9cIfplPGihZPUn+sTw9j3JErZIUkHg8+Pw==}
+    cpu: [x64]
+    os: [darwin]
+
   '@rollup/rollup-freebsd-arm64@4.63.5':
     resolution: {integrity: sha512-DrZbyCDF1hneuO6jRbvZ2D7+PIBM6yIwYnJpg2vIk58T+wuFpiaGZrfUr59lDWw45bg+IrpTGLPiNi/Fk4w3Cg==}
+    cpu: [arm64]
+    os: [freebsd]
+
+  '@rollup/rollup-freebsd-arm64@4.68.0':
+    resolution: {integrity: sha512-TERqEn6P9bp4lsTyoFjT3nLKV6G++76HhGb4k6dRGcs+jvhVcTGaS2zkeRdLLRjwKxpBtdCZe11kUQ2hNGgFSA==}
     cpu: [arm64]
     os: [freebsd]
 
@@ -2225,8 +2168,19 @@ packages:
     cpu: [x64]
     os: [freebsd]
 
+  '@rollup/rollup-freebsd-x64@4.68.0':
+    resolution: {integrity: sha512-RBjDrqb7h5l6Xgdgz5eKYvbpnUkii/z5ejWuZmHJsXORi0X0tTtFzEEgJj2DX995kW18c6T9LGFn/deEAMXDcQ==}
+    cpu: [x64]
+    os: [freebsd]
+
   '@rollup/rollup-linux-arm-gnueabihf@4.63.5':
     resolution: {integrity: sha512-CFmhpvAwzSaWMlN3VN7UtmoTihlZNzoP0juQib5TQRnYUyDV8dXeWOp29sobWAT6gXl/hQgAClLlEiYozQG3OQ==}
+    cpu: [arm]
+    os: [linux]
+    libc: [glibc]
+
+  '@rollup/rollup-linux-arm-gnueabihf@4.68.0':
+    resolution: {integrity: sha512-HtLgXBqjF1Ampt9eJjzSmoGDvNb4LP8Y2aPXQZeQ5qhyExXLmoXJB9Jfm/nPi/8fJ3UFn4sZ7pQKyr8V+oTN8g==}
     cpu: [arm]
     os: [linux]
     libc: [glibc]
@@ -2237,8 +2191,20 @@ packages:
     os: [linux]
     libc: [musl]
 
+  '@rollup/rollup-linux-arm-musleabihf@4.68.0':
+    resolution: {integrity: sha512-q51xJyqjaqCNtDjYD7xNVwsPa2TcVfAIBeP6E20wicKZ6XYp8Taz9SUPYhIENojAQIAoV7cO3mUdMUgWYEAuhQ==}
+    cpu: [arm]
+    os: [linux]
+    libc: [musl]
+
   '@rollup/rollup-linux-arm64-gnu@4.63.5':
     resolution: {integrity: sha512-VcPr/szv/1BFw112Kt//fxulXt/JPqzzidU84iW68L2DdjnOO8QFUv2zTSYBEPHD6movBD4z+bbr5y60GYM7Jw==}
+    cpu: [arm64]
+    os: [linux]
+    libc: [glibc]
+
+  '@rollup/rollup-linux-arm64-gnu@4.68.0':
+    resolution: {integrity: sha512-wejnVabl92oFC/o4sr/EEJuJZMHtMq4C+LBIPphN4EUiVHe9qvZNw+biqhVHpX2ggs1+Z3ugXGwJxT+qhyaaYQ==}
     cpu: [arm64]
     os: [linux]
     libc: [glibc]
@@ -2249,8 +2215,20 @@ packages:
     os: [linux]
     libc: [musl]
 
+  '@rollup/rollup-linux-arm64-musl@4.68.0':
+    resolution: {integrity: sha512-tyu+hrsCWHHqV6+2tligV/recJH+HVvNV2Sp4nS1C+MKQPkNXRovKIzyHy0V0xXjm6igCLgsT2vTky5CvWP37g==}
+    cpu: [arm64]
+    os: [linux]
+    libc: [musl]
+
   '@rollup/rollup-linux-loong64-gnu@4.63.5':
     resolution: {integrity: sha512-LrYcHZwF+fAMNKHYTOQ5osWM4AZF7YF6D+XtsjDyEvljtt11twc+zHVXBLNEjxVSUnKYsOhvVz4Z213eW02COQ==}
+    cpu: [loong64]
+    os: [linux]
+    libc: [glibc]
+
+  '@rollup/rollup-linux-loong64-gnu@4.68.0':
+    resolution: {integrity: sha512-5gjJNglKDfgs3OmnGi/RVZQPhEfRoCIHxwSAP9ngmdnxreu0Vl9lI4gxmFBXOhKdftpS82xRdc/7Dp5/A1F0qg==}
     cpu: [loong64]
     os: [linux]
     libc: [glibc]
@@ -2261,8 +2239,20 @@ packages:
     os: [linux]
     libc: [musl]
 
+  '@rollup/rollup-linux-loong64-musl@4.68.0':
+    resolution: {integrity: sha512-2IBxTUds33rFYwOIEyf77wfW8WQThwiQQ1ofXSraZQG7PiIq7BnQBf/ge0qEI/Ny/2cSc7SKkGO/wUDqmYXqTg==}
+    cpu: [loong64]
+    os: [linux]
+    libc: [musl]
+
   '@rollup/rollup-linux-ppc64-gnu@4.63.5':
     resolution: {integrity: sha512-5ylkX6dWMeBKge9nTU+Rxfb+ZfaCIJ9lRqIFaK0eAMcWp7OJbYnLveLgXmm0VrvuLKb8qIK+mHyH0qu88RM+iA==}
+    cpu: [ppc64]
+    os: [linux]
+    libc: [glibc]
+
+  '@rollup/rollup-linux-ppc64-gnu@4.68.0':
+    resolution: {integrity: sha512-mE/Pj2PPTZIVHkNNuHq+eYoU3td8LCm73zjrXoBWkNlnuULJS2l/fxwgGPpN4WUCNZgKZ1IXwrnnETPyOcWPmg==}
     cpu: [ppc64]
     os: [linux]
     libc: [glibc]
@@ -2273,8 +2263,20 @@ packages:
     os: [linux]
     libc: [musl]
 
+  '@rollup/rollup-linux-ppc64-musl@4.68.0':
+    resolution: {integrity: sha512-dYuykUkAiTv+RQdP3Ib47XcFiImkBWiRpTGSQWAMfZPQyoQYGe8Je4IUeZYNUQWIojmRCUnt5xsH4BbUb2uqSw==}
+    cpu: [ppc64]
+    os: [linux]
+    libc: [musl]
+
   '@rollup/rollup-linux-riscv64-gnu@4.63.5':
     resolution: {integrity: sha512-UcetmHZ6XOXuUByiKZyQmb55ZPr0LABr3Ec/HB9wKZn6CEAFWZkE+hsJErJ9hbPBC7nI0dKuELx7CoV6IM7TMg==}
+    cpu: [riscv64]
+    os: [linux]
+    libc: [glibc]
+
+  '@rollup/rollup-linux-riscv64-gnu@4.68.0':
+    resolution: {integrity: sha512-OnPDDFXLqJewY56T6ow8sA4wuzbqlliD7QJgkrx2KX+pWOpjI3usYXgB0pwK3nsgTF2odCw9IuJs0Uis/jy2qA==}
     cpu: [riscv64]
     os: [linux]
     libc: [glibc]
@@ -2285,8 +2287,20 @@ packages:
     os: [linux]
     libc: [musl]
 
+  '@rollup/rollup-linux-riscv64-musl@4.68.0':
+    resolution: {integrity: sha512-CqoQf06cK0brrRfDqH7Mt8G4MdteFGbjBdC61zEMaSVna6xo6QMUixa9bAkAD4a92g3ElPbQAkLMUzdf+Lk8dg==}
+    cpu: [riscv64]
+    os: [linux]
+    libc: [musl]
+
   '@rollup/rollup-linux-s390x-gnu@4.63.5':
     resolution: {integrity: sha512-lHVQHJFKsuuxLMi3MQO9XVL8Tje3JR82CzB+QDKC5NWBcsIWuwsn9uIM5e3lBhI+fF1/s63qnyYqsg65+8rV/w==}
+    cpu: [s390x]
+    os: [linux]
+    libc: [glibc]
+
+  '@rollup/rollup-linux-s390x-gnu@4.68.0':
+    resolution: {integrity: sha512-LPHNmE8GwiyELGLUTkqj4zsP1YEHzGdtwnKxAcdP/swsNxXsfxPtpe5nrD/KGxr136xPB+eWv2r/SGj9md0pnQ==}
     cpu: [s390x]
     os: [linux]
     libc: [glibc]
@@ -2297,8 +2311,20 @@ packages:
     os: [linux]
     libc: [glibc]
 
+  '@rollup/rollup-linux-x64-gnu@4.68.0':
+    resolution: {integrity: sha512-GDOmvgephpRCNyNGRQOZh0KD2gTyRVM1Bb1iOo759xeCUpCAoRCmJioOOSu2MwyWfNOocGd0V5I9vYLfteC6/A==}
+    cpu: [x64]
+    os: [linux]
+    libc: [glibc]
+
   '@rollup/rollup-linux-x64-musl@4.63.5':
     resolution: {integrity: sha512-VDC7rRJlee/scpki96GZ27Omf6yU87s1YXwVTpjE5841faVlDYYT565rgfmoR1U0sqL7z5ivQSDjcsF6VRXyBA==}
+    cpu: [x64]
+    os: [linux]
+    libc: [musl]
+
+  '@rollup/rollup-linux-x64-musl@4.68.0':
+    resolution: {integrity: sha512-HADRxkvl5eg3hbemCmv81UwTfdQy/CiSJDOabLE+p5tpm3OTjuRtzpLXy5zPfGY9FQD4Qv7qHptXmG/YjmNmyw==}
     cpu: [x64]
     os: [linux]
     libc: [musl]
@@ -2308,8 +2334,18 @@ packages:
     cpu: [x64]
     os: [openbsd]
 
+  '@rollup/rollup-openbsd-x64@4.68.0':
+    resolution: {integrity: sha512-iERrpqu1VEfyX736HLKiXRbwGDkCV/iybARY/mn14KcI6oKhJGBx1e+bU+g+umTKghtiGSPaHkwwpII4/N3RjA==}
+    cpu: [x64]
+    os: [openbsd]
+
   '@rollup/rollup-openharmony-arm64@4.63.5':
     resolution: {integrity: sha512-IzQmj+xXwQFGhMAMKMQVXkMwMZN3TqkJgAE0nSsqvVwWWciP4AIPMmWRqOQ2GfX7TUDZr+xqGFcBS36CRPGw0g==}
+    cpu: [arm64]
+    os: [openharmony]
+
+  '@rollup/rollup-openharmony-arm64@4.68.0':
+    resolution: {integrity: sha512-hBn57IqAbpXpyktckonwePTaFOQS6THph8ZnpRO3eZHY4LncuZGjSsseigBnKuSMKKpLnJJ7PemDvXEzniXC+A==}
     cpu: [arm64]
     os: [openharmony]
 
@@ -2318,8 +2354,18 @@ packages:
     cpu: [arm64]
     os: [win32]
 
+  '@rollup/rollup-win32-arm64-msvc@4.68.0':
+    resolution: {integrity: sha512-pJWb7mIw9Z25Hl3Q6nHFjl7AnczfOpm2gbOFYguSRv6TiH7DzsoAk/thymb/URSQu9OUEK7uaDMC5Xfm+7TAww==}
+    cpu: [arm64]
+    os: [win32]
+
   '@rollup/rollup-win32-ia32-msvc@4.63.5':
     resolution: {integrity: sha512-igoDsTFhhwECBeGbUuLeIk7t8Y1apa+cs6mDWpx2EZ0ch7oEQgzHbFUXN9euoHekCAQzXdXApAGkV6jznS7tWw==}
+    cpu: [ia32]
+    os: [win32]
+
+  '@rollup/rollup-win32-ia32-msvc@4.68.0':
+    resolution: {integrity: sha512-pnrhmoyF2otH2Mezol14/ELUFGuRddOCz6+I+J0pq2Itnp4UxkjABQcXawCNMaKNsCRiuL90BtNzbEd0fHjpIg==}
     cpu: [ia32]
     os: [win32]
 
@@ -2328,8 +2374,18 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@rollup/rollup-win32-x64-gnu@4.68.0':
+    resolution: {integrity: sha512-1dJ3U+ktdtaIdPaOZKwIX57+bKQk4iAjs5M1wQWLKRB6Wglp98qf8LUeuN4u6bGlIYouZKaySZJ5Qd4OalUMnA==}
+    cpu: [x64]
+    os: [win32]
+
   '@rollup/rollup-win32-x64-msvc@4.63.5':
     resolution: {integrity: sha512-ypfC34F3RKXvCXBglGqGMsUSMKlgwd1HX9AOAlx9RoZZ6GaI42YHVeKpzg3JG+wpBUJYTG+NNZhqbDWL8tBZkw==}
+    cpu: [x64]
+    os: [win32]
+
+  '@rollup/rollup-win32-x64-msvc@4.68.0':
+    resolution: {integrity: sha512-e/NRJFl48wL5DFNSzQrvm4kaB5dzNNmqWjIJ6And2Sjuw4klO3w3TXMvCAEF1tHTrQQgpOD4QVkBE/92/yBGrQ==}
     cpu: [x64]
     os: [win32]
 
@@ -2428,6 +2484,9 @@ packages:
 
   '@types/emscripten@1.41.6':
     resolution: {integrity: sha512-uN+9i8bFT5CUcZfyIEYDrSueACEyKGbUs5kC/72DGlZZoinh84sJfVV0i8UOJD1asdzkvLPBRrKs41kZ8MdEXg==}
+
+  '@types/estree@1.0.10':
+    resolution: {integrity: sha512-lTyOMnOcmRBzdCv6/4zUZCrEhV0xrqQiUZBZtVcbmLHBXKLnN8q89v/wKRF/Q0HbwVsqbIG3o5HDoFl9sduM+g==}
 
   '@types/estree@1.0.9':
     resolution: {integrity: sha512-GhdPgy1el4/ImP05X05Uw4cw2/M93BCUmnEvWZNStlCzEKME4Fkk+YpoA5OiHNQmoS7Cafb8Xa3Pya8m1Qrzeg==}
@@ -2752,10 +2811,6 @@ packages:
 
   argparse@2.0.1:
     resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
-
-  aria-hidden@1.2.6:
-    resolution: {integrity: sha512-ik3ZgC9dY/lYVVM++OISsaYDeg1tb0VtP5uL3ouh1koGOaUMDPpbFIei4JkFimWUFPn90sbMNMXQAIVOlnYKJA==}
-    engines: {node: '>=10'}
 
   asap@2.0.6:
     resolution: {integrity: sha512-BSHWgDSAiKs50o2Re8ppvp3seVHXSRM44cdSsT9FfNEUUZLOGWVCsiWaRPWM1Znn+mqZ1OfVZ3z3DWEzSp7hRA==}
@@ -3221,10 +3276,6 @@ packages:
   decimal.js@10.6.0:
     resolution: {integrity: sha512-YpgQiITW3JXGntzdUmyUR1V812Hn8T1YVXhCu+wO3OpS4eU9l4YdD3qjyiKdV6mvV29zapkMeD390UVEf2lkUg==}
 
-  decode-uri-component@0.5.1:
-    resolution: {integrity: sha512-vWHQkXgg2cE3BB4rR0c+PYw9BCQzLoNIRMI7AunIkZst74tw/vpPp7VLoYtsR/cy1f55g3XDWUslfeCZjiZJyA==}
-    engines: {node: '>=14.16'}
-
   dedent@1.7.2:
     resolution: {integrity: sha512-WzMx3mW98SN+zn3hgemf4OzdmyNhhhKz5Ay0pUfQiMQ3e1g+xmTJWp/pKdwKVXhdSkAEGIIzqeuWrL3mV/AXbA==}
     peerDependencies:
@@ -3268,9 +3319,6 @@ packages:
     resolution: {integrity: sha512-TLz+x/vEXm/Y7P7wn1EJFNLxYpUD4TgMosxY6fAVJUnJMbupHBOncxyWUG9OpTaH9EBD7uFI5LfEgmMOc54DsA==}
     engines: {node: '>=8'}
 
-  detect-node-es@1.1.0:
-    resolution: {integrity: sha512-ypdmJU/TbBby2Dxibuv7ZLW3Bs1QEmM7nHjEANfohJLvE0XVujisn1qPJcZxg+qDucsr+bP6fLD1rPS3AhJ7EQ==}
-
   diff-sequences@29.6.3:
     resolution: {integrity: sha512-EjePK1srD3P08o2j4f0ExnylqRs5B9tJjcp9t1krH2qRi8CCdsYfwe9JgSLurFBWwq4uOlipzfk5fHNvwFKr8Q==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
@@ -3312,8 +3360,8 @@ packages:
   electron-to-chromium@1.5.442:
     resolution: {integrity: sha512-najZYZ3+ZpjN1z3VOsrBiv5ej18vQgfV2lvEmxWzfmKrk4bdm3Owseyud4yGU6DfFn9pyunoAHDDyM4KmP78Ew==}
 
-  electron-to-chromium@1.5.479:
-    resolution: {integrity: sha512-uAJdJQ7vHa4TvPfzt1TOqoRgHmav5gwmqHMPLxBH6m8Cbj5R9/z/rygTOQiZ8pe5g0ZAEogga1bP6HoKcOzx/Q==}
+  electron-to-chromium@1.5.478:
+    resolution: {integrity: sha512-pftG+ma5Lm8O6/p45bhYT6StBN5ziQymaRzmCZwFl8DwWHKPPD93FdOmP1aqftcepolQYvrcyTLa17kE8Yf+jg==}
 
   emittery@0.13.1:
     resolution: {integrity: sha512-DeWwawk6r5yR9jFgnDKYt4sLS0LmHJJi3ZOnb5/JdbYwj3nW+FxQnHIjhBKz8YLC7oRNPVM9NQ47I3CVx34eqQ==}
@@ -3481,8 +3529,8 @@ packages:
       react: '*'
       react-native: '*'
 
-  expo-glass-effect@57.0.4:
-    resolution: {integrity: sha512-/AG2Kljbqfgxu+GchI2YFIbxiF9cPsIpCy4iNDzlRiZk9rvR6BwRfB6gfQVu3V2ExaoGf2h5IsEnqVI5MYNBAg==}
+  expo-glass-effect@58.0.5:
+    resolution: {integrity: sha512-PkL1X/r0cTs6NG47Xp3TxRvtqSeRmPYhPOHp3GDmZB2oOxpjXge6qLi/bSSv0asFWqf+MLOlXZ+hq2Imuh0Z1g==}
     peerDependencies:
       expo: '*'
       react: '*'
@@ -3535,26 +3583,33 @@ packages:
     peerDependencies:
       react-native: '*'
 
-  expo-router@57.0.24:
-    resolution: {integrity: sha512-XpqE4Oh4yrmc+sVfsDQPLErBlus//85ulLRghVZltYcdvFm9yNzErmaKrXuBVMUL6D3tnpDtkIgxESG9hYBd7w==}
+  expo-router@58.0.30:
+    resolution: {integrity: sha512-GzwSjiDCJeSHDiH71jeCsncMCEksRyDhGweNcVjGfW5C7JMYtROUroMBudPGtrOpKkHUQ0lampFsb8jidT4lbg==}
     peerDependencies:
-      '@expo/log-box': ^57.0.4
-      '@expo/metro-runtime': ^57.0.16
-      '@testing-library/react-native': '>= 13.2.0'
+      '@expo/log-box': ^58.0.15
+      '@expo/metro-runtime': ^58.0.17
+      '@expo/ui': ^58.0.27
+      '@testing-library/react-native': '>= 14.0.0'
       expo: '*'
-      expo-constants: ^57.0.20
-      expo-linking: ^57.0.11
+      expo-constants: ^58.0.15
+      expo-linking: ^58.0.16
+      expo-symbols: ^58.0.4
       react: '*'
       react-dom: '*'
       react-native: '*'
       react-native-gesture-handler: '*'
       react-native-reanimated: '*'
       react-native-safe-area-context: '>= 5.4.0'
-      react-native-screens: ^4.26.0
+      react-native-screens: ^4.30.1 || ^5.0.0-alpha.3
       react-native-web: '*'
-      react-server-dom-webpack: ~19.0.4 || ~19.1.5 || ~19.2.4
+      react-native-worklets: '*'
+      react-server-dom-webpack: ~19.0.4 || ~19.1.5 || ~19.2.4 || ~19.3.0
     peerDependenciesMeta:
+      '@expo/ui':
+        optional: true
       '@testing-library/react-native':
+        optional: true
+      expo-symbols:
         optional: true
       react-dom:
         optional: true
@@ -3563,6 +3618,8 @@ packages:
       react-native-reanimated:
         optional: true
       react-native-web:
+        optional: true
+      react-native-worklets:
         optional: true
       react-server-dom-webpack:
         optional: true
@@ -3576,6 +3633,10 @@ packages:
     resolution: {integrity: sha512-aK+LdKzauHSGmsOStZtyxdzv0zWssCkxTw3m4QuOhfDSJsZaMRTd9O41d8ixU/QfELTbaJ0oRNcF7JFV/7O9YQ==}
     engines: {node: '>=20.16.0'}
 
+  expo-server@58.0.6:
+    resolution: {integrity: sha512-6DBlSZwxk3J0y1j2s4XebAWNiwGaMp32NcWX7b2kJC2+EFf1g+pCcVmx8ylawt2tyLmbDHswm4MHOfrd4bqfvA==}
+    engines: {node: ^22.13.0 || ^24.3.0 || ^26.0.0 || >=27.0.0}
+
   expo-status-bar@57.0.1:
     resolution: {integrity: sha512-Xwaq1gAoVRWx5dPG5VhT5RSbnI9OilhZnO5qoPBnUaBAa5VzRzfdS8q0/bsPt0jR2DKLtGuP0bQ6efMJ4RIMDg==}
     peerDependencies:
@@ -3583,11 +3644,10 @@ packages:
       react: '*'
       react-native: '*'
 
-  expo-symbols@57.0.3:
-    resolution: {integrity: sha512-uuK5yHLVR7kExUCrO/ItBvp/kp1maQ9Nkb6KvNy5ZUQnN0NMKwuhJ4GvbfS9N3ACmvCjTT4gKvg4yH5UuKIYNA==}
+  expo-status-bar@58.0.4:
+    resolution: {integrity: sha512-e6JJHziSSNb1v1VSzmDrAPf6GFoPRdVOIDrTCcK3bHfbJEAZGZ3YZXfqlorZtUFDT0z6NcjaZf0mPWifJZcqew==}
     peerDependencies:
       expo: '*'
-      expo-font: '*'
       react: '*'
       react-native: '*'
 
@@ -3680,10 +3740,6 @@ packages:
     resolution: {integrity: sha512-YsGpe3WHLK8ZYi4tWDg2Jy3ebRz2rXowDxnld4bkQB00cc/1Zw9AWnC0i9ztDJitivtQvaI9KaLyKrc+hBW0yg==}
     engines: {node: '>=8'}
 
-  filter-obj@1.1.0:
-    resolution: {integrity: sha512-8rXg1ZnX7xzy2NGDVkBVaAy+lSlPNwad13BtgSlLuxfIslyt5Vg64U7tFcCt4WS1R0hvtnQybT/IyCkGZ3DpXQ==}
-    engines: {node: '>=0.10.0'}
-
   finalhandler@1.1.2:
     resolution: {integrity: sha512-aAWcW57uxVNrQZqFXjITpW3sIUQmHGG3qSb9mUah9MgMC4NeWhNOlNjXEYq3HjRAvL6arUviZGGJsBg6z0zsWA==}
     engines: {node: '>= 0.8'}
@@ -3743,10 +3799,6 @@ packages:
   get-intrinsic@1.3.0:
     resolution: {integrity: sha512-9fSjSaos/fRIVIp+xSJlE6lfwhES7LNtKaCBIamHsjr2na1BiABJPo0mOjjz8GJDURarmCPGqaiVg5mfjb98CQ==}
     engines: {node: '>= 0.4'}
-
-  get-nonce@1.0.1:
-    resolution: {integrity: sha512-FJhYRoDaiatfEkUK8HKlicmu/3SGFD51q3itKDGoSTysQJBnfOcxU5GxnhE1E6soB76MbT0MBtnKJuXyAx+96Q==}
-    engines: {node: '>=6'}
 
   get-package-type@0.1.0:
     resolution: {integrity: sha512-pjzuKtY64GYfWizNAJ0fr9VqttZkNiK2iS430LtIHzjBEr6bX8Am2zm4sW4Ro5wjWW5cAlRL1qAMTcXbjNAO2Q==}
@@ -4640,11 +4692,6 @@ packages:
   mz@2.7.0:
     resolution: {integrity: sha512-z81GNO7nnYMEhrGh9LeymoE4+Yr0Wn5McHIZMK5cfQCl+NDX08sCZgUc9/6MHni9IWuFLm1Z3HTCXu2z9fN62Q==}
 
-  nanoid@3.3.19:
-    resolution: {integrity: sha512-Y2tUNy4ouw6tq5oDSKeQYGOyhkUBhNOcGV/02KC+6kd9eDGqdZd++mjMiIDilrBYvjEnCYvVtsuHCuP+okSfug==}
-    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
-    hasBin: true
-
   nanoid@3.3.20:
     resolution: {integrity: sha512-uKdg2G3GNCKQn9byYOpxbGqrT2fGO5KRt5J/8b3pok8rT6qxGWF6hxMyJiEYtAf+FVyYuD9hRaDqX5uPFYJ4ZQ==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
@@ -5035,10 +5082,6 @@ packages:
     engines: {node: '>=10.13.0'}
     hasBin: true
 
-  query-string@7.1.3:
-    resolution: {integrity: sha512-hh2WYhq4fi8+b+/2Kg9CEge4fDPvHS534aOOvOZeQ3+Vf2mCFsaFBYj0i+iXcAq6I9Vzp5fjMFBlONvayDC1qg==}
-    engines: {node: '>=6'}
-
   querystringify@2.2.0:
     resolution: {integrity: sha512-FIqgj2EUvTa7R50u0rGsyTftzjYmv/a3hO345bZNrqabNqjtgiDMgmo4mkUjd+nzU5oF3dClKqFIPUKybUyqoQ==}
 
@@ -5072,14 +5115,11 @@ packages:
   react-is@18.3.1:
     resolution: {integrity: sha512-/LLMVyas0ljjAtoYiPqYiL8VWXzUUdThrmU5+n20DZv+a+ClRoevUzw5JxU+Ieh5/c87ytoTBV9G1FiKfNJdmg==}
 
-  react-is@19.3.0:
-    resolution: {integrity: sha512-UpMYezM4v5/18F28aC66AEsjXIgE02kyEMH6yLdgLXu/UTfa1Ntwck/nNLrbqJsEXW7gPb0coNO9FQse9WTovA==}
-
   react-is@19.3.1:
     resolution: {integrity: sha512-RRieF6IyxQBkcK6pP8xOHprLTPW6QjRkbGdImtqNme+/hYVwCZkLQLdlZGOhUqXwkS9IEynaGvPJtv6XB/cz0Q==}
 
-  react-native-drawer-layout@4.2.11:
-    resolution: {integrity: sha512-Aua+LAZJ6L3v7ESHsNtxN2sO+hFQKsSz3EDKOLIpWni6PdQEJGFT0Mc2UnEsvFdfV743aHfODTAaHxsJ2D0uFw==}
+  react-native-drawer-layout@4.2.12:
+    resolution: {integrity: sha512-qYmntEctkMSodN7pnC2llV21nswImLFPHJeT3PJXSJqZdU4jzDATR8iVi66sXkrtoOLJ2+EvXxgd7sMMpV4ViA==}
     peerDependencies:
       react: '>= 18.2.0'
       react-native: '*'
@@ -5167,36 +5207,6 @@ packages:
   react-refresh@0.14.2:
     resolution: {integrity: sha512-jCvmsr+1IUSMUyzOkRcvnVbX3ZYC6g9TDrDbFuFmRDq7PD4yaGbLKNQL6k2jnArV8hjYxh7hVhAZB6s9HDGpZA==}
     engines: {node: '>=0.10.0'}
-
-  react-remove-scroll-bar@2.3.8:
-    resolution: {integrity: sha512-9r+yi9+mgU33AKcj6IbT9oRCO78WriSj6t/cF8DWBZJ9aOGPOTEDvdUDz1FwKim7QXWwmHqtdHnRJfhAxEG46Q==}
-    engines: {node: '>=10'}
-    peerDependencies:
-      '@types/react': '*'
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-
-  react-remove-scroll@2.7.2:
-    resolution: {integrity: sha512-Iqb9NjCCTt6Hf+vOdNIZGdTiH1QSqr27H/Ek9sv/a97gfueI/5h1s3yRi1nngzMUaOOToin5dI1dXKdXiF+u0Q==}
-    engines: {node: '>=10'}
-    peerDependencies:
-      '@types/react': '*'
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^19.0.0-rc
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-
-  react-style-singleton@2.2.3:
-    resolution: {integrity: sha512-b6jSvxvVnyptAiLjbkWLE/lOnR4lfTtDAl+eUC7RZy+QQWc6wRzIV2CE6xBuMmDxc2qIihtDCZD5NPOFl7fRBQ==}
-    engines: {node: '>=10'}
-    peerDependencies:
-      '@types/react': '*'
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^19.0.0-rc
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
 
   react-test-renderer@19.2.3:
     resolution: {integrity: sha512-TMR1LnSFiWZMJkCgNf5ATSvAheTT2NvKIwiVwdBPHxjBI7n/JbWd4gaZ16DVd9foAXdvDz+sB5yxZTwMjPRxpw==}
@@ -5301,6 +5311,11 @@ packages:
     engines: {node: '>=18.0.0', npm: '>=8.0.0'}
     hasBin: true
 
+  rollup@4.68.0:
+    resolution: {integrity: sha512-BIHWnc1Qjdy+WLfOdcSd67sxO4iW6pTnhdZosg+7ywSaiMWxxzKldkkNpUJqeXYAiJzyB14P2cIjqC6tlb6xzw==}
+    engines: {node: '>=18.0.0', npm: '>=8.0.0'}
+    hasBin: true
+
   rtl-detect@1.1.2:
     resolution: {integrity: sha512-PGMBq03+TTG/p/cRB7HCLKJ1MgDIi07+QU1faSjiYRfmY5UsAttV9Hs08jDAHVwcOwmVLcSJkpwyfXszVjWfIQ==}
 
@@ -5385,9 +5400,6 @@ packages:
     resolution: {integrity: sha512-TPbeg0b7ylrswdGCji8FRGFAKuqbpQlLbL8SOle3j1iHSs5Ob5mhvMAxWN2UItOjgALAB5Zp3fmMfj8mbWvXKw==}
     engines: {node: '>=10'}
 
-  shallowequal@1.1.0:
-    resolution: {integrity: sha512-y0m1JoUZSlPAjXVtPPW70aZWfIL/dSP7AFkRnniLCrK/8MDKog3TySTBmckD+RObVxH0v4Tox67+F14PdED2oQ==}
-
   sharp@0.35.5:
     resolution: {integrity: sha512-Ywn4OnzGukp7CDMrp08RQ50YKmuwG47brZgIVPTvBaaAfQlRlygrRqSrxdCiL9M+LlzLBiJ68IR1QqvzHyjC7g==}
     engines: {node: '>=20.9.0'}
@@ -5466,10 +5478,6 @@ packages:
     resolution: {integrity: sha512-i5uvt8C3ikiWeNZSVZNWcfZPItFQOsYTUAOkcUPGd8DqDy1uOUikjt5dG+uRlwyvR108Fb9DOd4GvXfT0N2/uQ==}
     engines: {node: '>= 12'}
 
-  split-on-first@1.1.0:
-    resolution: {integrity: sha512-43ZssAJaMusuKWL8sKUBQXHWOpq8d6CfN/u1p4gUzfJkM05C8rxTmYrkIPTXapZpORA6LkkzcUulJ8FqA7Uudw==}
-    engines: {node: '>=6'}
-
   split2@4.2.0:
     resolution: {integrity: sha512-UcjcJOWknrNkF6PLX83qcHM6KHgVKNkV62Y8a5uYDVv9ydGQVwAHMKqHdJje1VTWpljG0WYpCDhrCdAOYH4TWg==}
     engines: {node: '>= 10.x'}
@@ -5523,10 +5531,6 @@ packages:
 
   stream-shift@1.0.3:
     resolution: {integrity: sha512-76ORR0DO1o1hlKwTbi/DM3EXWGf3ZJYO8cXX5RJwnul2DEg2oyoZyjLNoQM8WsvZiFKCRfC1O0J7iCvie3RZmQ==}
-
-  strict-uri-encode@2.0.0:
-    resolution: {integrity: sha512-QwiXZgpRcKkhTj2Scnn++4PKtWsH0kpzZ62L2R6c/LUVYv7hVnZqcg2+sMuT6R7Jusu1vviK/MFsu6kNJfWlEQ==}
-    engines: {node: '>=4'}
 
   string-length@4.0.2:
     resolution: {integrity: sha512-+l6rNN5fYHNhZZy41RXsYptCjA2Igmq4EG7kZAYFQI1E1VTXarr6ZPXBg6eq7Y6eK4FEhY6AJlyuFIb/v/S0VQ==}
@@ -5832,30 +5836,10 @@ packages:
   url-parse@1.5.10:
     resolution: {integrity: sha512-WypcfiRhfeUP9vvF0j6rw0J3hrWrw6iZv3+22h6iRMJ/8z1Tj6XfLP4DsUix5MhMPnXpiHDoKyoZ/bdCkwBCiQ==}
 
-  use-callback-ref@1.3.3:
-    resolution: {integrity: sha512-jQL3lRnocaFtu3V00JToYz/4QkNWswxijDaCVNZRiRTO3HQDLsdu1ZtmIUvV4yPp+rvWm5j0y0TG/S61cuijTg==}
-    engines: {node: '>=10'}
-    peerDependencies:
-      '@types/react': '*'
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^19.0.0-rc
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-
   use-latest-callback@0.2.6:
     resolution: {integrity: sha512-FvRG9i1HSo0wagmX63Vrm8SnlUU3LMM3WyZkQ76RnslpBrX694AdG4A0zQBx2B3ZifFA0yv/BaEHGBnEax5rZg==}
     peerDependencies:
       react: '>=16.8'
-
-  use-sidecar@1.1.3:
-    resolution: {integrity: sha512-Fedw0aZvkhynoPYlA5WXrMCAMm+nSWdZt6lzJQ7Ok8S6Q+VsHmHpRWndVRJ8Be0ZbkfPc5LRYH+5XrzXcEeLRQ==}
-    engines: {node: '>=10'}
-    peerDependencies:
-      '@types/react': '*'
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^19.0.0-rc
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
 
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
@@ -5879,12 +5863,6 @@ packages:
   vary@1.1.2:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
     engines: {node: '>= 0.8'}
-
-  vaul@1.1.2:
-    resolution: {integrity: sha512-ZFkClGpWyI2WUQjdLJ/BaGuV6AVQiJ3uELGk3OYtP+B6yCO7Cmn9vPFXVJkRaGkOJu3m8bQMgtyzNHixULceQA==}
-    peerDependencies:
-      react: ^16.8 || ^17.0 || ^18.0 || ^19.0.0 || ^19.0.0-rc
-      react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0.0 || ^19.0.0-rc
 
   vite@7.3.7:
     resolution: {integrity: sha512-AHEzTORMbi7/7aXp7w7KZ5+DCUdSeLsJz0grY8xHpc9DHdYb0vQu6DqJfm2tOw3gDExNgPgnJTXxM6syYFHaCA==}
@@ -7203,9 +7181,7 @@ snapshots:
 
   '@expo-google-fonts/figtree@0.4.1': {}
 
-  '@expo-google-fonts/material-symbols@0.4.48': {}
-
-  '@expo/cli@57.0.27(@expo/dom-webview@57.0.1)(@expo/metro-runtime@57.0.16)(expo-constants@57.0.20)(expo-font@57.0.4)(expo-router@57.0.24)(expo@57.0.26)(react-dom@19.3.1(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)':
+  '@expo/cli@57.0.27(@expo/dom-webview@57.0.1)(expo-constants@57.0.20)(expo-font@57.0.4(expo@57.0.26)(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(expo-router@58.0.30)(expo@57.0.26)(react-dom@19.3.1(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)':
     dependencies:
       '@expo/code-signing-certificates': 0.0.6
       '@expo/config': 57.0.9(typescript@6.0.3)
@@ -7224,8 +7200,8 @@ snapshots:
       '@expo/plist': 0.8.1
       '@expo/prebuild-config': 57.0.16(typescript@6.0.3)
       '@expo/require-utils': 57.0.5(typescript@6.0.3)
-      '@expo/router-server': 57.0.11(@expo/metro-runtime@57.0.16)(expo-constants@57.0.20)(expo-font@57.0.4)(expo-router@57.0.24)(expo-server@57.0.3)(expo@57.0.26)(react-dom@19.3.1(react@19.2.3))(react@19.2.3)
-      '@expo/schema-utils': 57.0.2
+      '@expo/router-server': 57.0.11(expo-constants@57.0.20)(expo-font@57.0.4(expo@57.0.26)(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(expo-router@58.0.30)(expo-server@57.0.3)(expo@57.0.26)(react-dom@19.3.1(react@19.2.3))(react@19.2.3)
+      '@expo/schema-utils': 57.0.3
       '@expo/spawn-async': 1.8.0
       '@expo/ws-tunnel': 2.0.0(ws@8.22.0)
       '@expo/xcpretty': 4.4.5
@@ -7241,7 +7217,7 @@ snapshots:
       connect: 3.7.0
       debug: 4.4.3
       dnssd-advertise: 1.1.6
-      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(@expo/metro-runtime@57.0.16)(expo-router@57.0.24)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
+      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(expo-router@58.0.30)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
       expo-server: 57.0.3
       fetch-nodeshim: 0.4.10
       getenv: 2.0.0
@@ -7268,7 +7244,7 @@ snapshots:
       ws: 8.22.0
       zod: 4.6.6
     optionalDependencies:
-      expo-router: 57.0.24(4df1b54414c35a0cddb53de35cd1b061)
+      expo-router: 58.0.30(5ba68bd2cc6a6bd68e0bb968d2e7d736)
       react-native: 0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3)
     transitivePeerDependencies:
       - '@expo/dom-webview'
@@ -7340,7 +7316,7 @@ snapshots:
 
   '@expo/dom-webview@57.0.1(expo@57.0.26)(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)':
     dependencies:
-      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(@expo/metro-runtime@57.0.16)(expo-router@57.0.24)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
+      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(expo-router@58.0.30)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
       react: 19.2.3
       react-native: 0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3)
 
@@ -7407,7 +7383,7 @@ snapshots:
     dependencies:
       '@expo/dom-webview': 57.0.1(expo@57.0.26)(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)
       anser: 1.4.10
-      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(@expo/metro-runtime@57.0.16)(expo-router@57.0.24)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
+      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(expo-router@58.0.30)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
       react: 19.2.3
       react-native: 0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3)
       stacktrace-parser: 0.1.11
@@ -7438,7 +7414,7 @@ snapshots:
       postcss: 8.5.32
       resolve-from: 5.0.0
     optionalDependencies:
-      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(@expo/metro-runtime@57.0.16)(expo-router@57.0.24)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
+      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(expo-router@58.0.30)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
     transitivePeerDependencies:
       - bufferutil
       - supports-color
@@ -7455,19 +7431,6 @@ snapshots:
       walker: 1.0.8
     transitivePeerDependencies:
       - supports-color
-
-  '@expo/metro-runtime@57.0.16(@expo/log-box@57.0.4)(expo@57.0.26)(react-dom@19.3.1(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)':
-    dependencies:
-      '@expo/log-box': 57.0.4(@expo/dom-webview@57.0.1)(expo@57.0.26)(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)
-      anser: 1.4.10
-      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(@expo/metro-runtime@57.0.16)(expo-router@57.0.24)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
-      pretty-format: 29.7.0
-      react: 19.2.3
-      react-native: 0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3)
-      stacktrace-parser: 0.1.11
-      whatwg-fetch: 3.6.20
-    optionalDependencies:
-      react-dom: 19.3.1(react@19.2.3)
 
   '@expo/metro@56.0.2':
     dependencies:
@@ -7535,22 +7498,23 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@expo/router-server@57.0.11(@expo/metro-runtime@57.0.16)(expo-constants@57.0.20)(expo-font@57.0.4)(expo-router@57.0.24)(expo-server@57.0.3)(expo@57.0.26)(react-dom@19.3.1(react@19.2.3))(react@19.2.3)':
+  '@expo/router-server@57.0.11(expo-constants@57.0.20)(expo-font@57.0.4(expo@57.0.26)(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(expo-router@58.0.30)(expo-server@57.0.3)(expo@57.0.26)(react-dom@19.3.1(react@19.2.3))(react@19.2.3)':
     dependencies:
       debug: 4.4.3
-      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(@expo/metro-runtime@57.0.16)(expo-router@57.0.24)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
+      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(expo-router@58.0.30)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
       expo-constants: 57.0.20(expo@57.0.26)(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))
       expo-font: 57.0.4(expo@57.0.26)(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)
       expo-server: 57.0.3
       react: 19.2.3
     optionalDependencies:
-      '@expo/metro-runtime': 57.0.16(@expo/log-box@57.0.4)(expo@57.0.26)(react-dom@19.3.1(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)
-      expo-router: 57.0.24(4df1b54414c35a0cddb53de35cd1b061)
+      expo-router: 58.0.30(5ba68bd2cc6a6bd68e0bb968d2e7d736)
       react-dom: 19.3.1(react@19.2.3)
     transitivePeerDependencies:
       - supports-color
 
-  '@expo/schema-utils@57.0.2': {}
+  '@expo/schema-utils@57.0.3': {}
+
+  '@expo/schema-utils@58.0.3': {}
 
   '@expo/sdk-runtime-versions@1.0.0': {}
 
@@ -7559,21 +7523,6 @@ snapshots:
       cross-spawn: 7.0.6
 
   '@expo/sudo-prompt@9.3.2': {}
-
-  '@expo/ui@57.0.21(@babel/core@7.29.13)(@types/react-dom@19.3.0(@types/react@19.2.18))(@types/react@19.2.18)(expo@57.0.26)(react-dom@19.3.1(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)':
-    dependencies:
-      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(@expo/metro-runtime@57.0.16)(expo-router@57.0.24)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
-      react: 19.2.3
-      react-native: 0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3)
-      sf-symbols-typescript: 2.2.0
-      vaul: 1.1.2(@types/react-dom@19.3.0(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.3.1(react@19.2.3))(react@19.2.3)
-    optionalDependencies:
-      '@babel/core': 7.29.13
-      react-dom: 19.3.1(react@19.2.3)
-      react-native-worklets: 0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)
-    transitivePeerDependencies:
-      - '@types/react'
-      - '@types/react-dom'
 
   '@expo/ws-tunnel@2.0.0(ws@8.22.0)':
     dependencies:
@@ -8163,14 +8112,15 @@ snapshots:
 
   '@pkgr/core@0.3.6': {}
 
-  '@radix-ui/primitive@1.1.7': {}
+  '@radix-ui/primitive@1.2.0': {}
 
-  '@radix-ui/react-collection@1.1.15(@types/react-dom@19.3.0(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.3.1(react@19.2.3))(react@19.2.3)':
+  '@radix-ui/react-collection@1.2.0(@types/react-dom@19.3.0(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.3.1(react@19.2.3))(react@19.2.3)':
     dependencies:
       '@radix-ui/react-compose-refs': 1.1.5(@types/react@19.2.18)(react@19.2.3)
-      '@radix-ui/react-context': 1.2.2(@types/react@19.2.18)(react@19.2.3)
-      '@radix-ui/react-primitive': 2.1.10(@types/react-dom@19.3.0(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.3.1(react@19.2.3))(react@19.2.3)
-      '@radix-ui/react-slot': 1.3.3(@types/react@19.2.18)(react@19.2.3)
+      '@radix-ui/react-context': 1.3.0(@types/react@19.2.18)(react@19.2.3)
+      '@radix-ui/react-primitive': 2.2.0(@types/react-dom@19.3.0(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.3.1(react@19.2.3))(react@19.2.3)
+      '@radix-ui/react-slot': 1.5.0(@types/react@19.2.18)(react@19.2.3)
+      '@radix-ui/react-use-layout-effect': 1.1.4(@types/react@19.2.18)(react@19.2.3)
       react: 19.2.3
       react-dom: 19.3.1(react@19.2.3)
     optionalDependencies:
@@ -8183,70 +8133,17 @@ snapshots:
     optionalDependencies:
       '@types/react': 19.2.18
 
-  '@radix-ui/react-context@1.2.2(@types/react@19.2.18)(react@19.2.3)':
+  '@radix-ui/react-context@1.3.0(@types/react@19.2.18)(react@19.2.3)':
     dependencies:
       react: 19.2.3
     optionalDependencies:
       '@types/react': 19.2.18
 
-  '@radix-ui/react-dialog@1.1.23(@types/react-dom@19.3.0(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.3.1(react@19.2.3))(react@19.2.3)':
-    dependencies:
-      '@radix-ui/primitive': 1.1.7
-      '@radix-ui/react-compose-refs': 1.1.5(@types/react@19.2.18)(react@19.2.3)
-      '@radix-ui/react-context': 1.2.2(@types/react@19.2.18)(react@19.2.3)
-      '@radix-ui/react-dismissable-layer': 1.1.19(@types/react-dom@19.3.0(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.3.1(react@19.2.3))(react@19.2.3)
-      '@radix-ui/react-focus-guards': 1.1.6(@types/react@19.2.18)(react@19.2.3)
-      '@radix-ui/react-focus-scope': 1.1.16(@types/react-dom@19.3.0(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.3.1(react@19.2.3))(react@19.2.3)
-      '@radix-ui/react-id': 1.1.4(@types/react@19.2.18)(react@19.2.3)
-      '@radix-ui/react-portal': 1.1.17(@types/react-dom@19.3.0(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.3.1(react@19.2.3))(react@19.2.3)
-      '@radix-ui/react-presence': 1.1.10(@types/react-dom@19.3.0(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.3.1(react@19.2.3))(react@19.2.3)
-      '@radix-ui/react-primitive': 2.1.10(@types/react-dom@19.3.0(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.3.1(react@19.2.3))(react@19.2.3)
-      '@radix-ui/react-slot': 1.3.3(@types/react@19.2.18)(react@19.2.3)
-      '@radix-ui/react-use-controllable-state': 1.2.6(@types/react@19.2.18)(react@19.2.3)
-      '@radix-ui/react-use-layout-effect': 1.1.4(@types/react@19.2.18)(react@19.2.3)
-      aria-hidden: 1.2.6
-      react: 19.2.3
-      react-dom: 19.3.1(react@19.2.3)
-      react-remove-scroll: 2.7.2(@types/react@19.2.18)(react@19.2.3)
-    optionalDependencies:
-      '@types/react': 19.2.18
-      '@types/react-dom': 19.3.0(@types/react@19.2.18)
-
-  '@radix-ui/react-direction@1.1.4(@types/react@19.2.18)(react@19.2.3)':
+  '@radix-ui/react-direction@1.2.0(@types/react@19.2.18)(react@19.2.3)':
     dependencies:
       react: 19.2.3
     optionalDependencies:
       '@types/react': 19.2.18
-
-  '@radix-ui/react-dismissable-layer@1.1.19(@types/react-dom@19.3.0(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.3.1(react@19.2.3))(react@19.2.3)':
-    dependencies:
-      '@radix-ui/primitive': 1.1.7
-      '@radix-ui/react-compose-refs': 1.1.5(@types/react@19.2.18)(react@19.2.3)
-      '@radix-ui/react-primitive': 2.1.10(@types/react-dom@19.3.0(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.3.1(react@19.2.3))(react@19.2.3)
-      '@radix-ui/react-use-callback-ref': 1.1.4(@types/react@19.2.18)(react@19.2.3)
-      '@radix-ui/react-use-effect-event': 0.0.5(@types/react@19.2.18)(react@19.2.3)
-      react: 19.2.3
-      react-dom: 19.3.1(react@19.2.3)
-    optionalDependencies:
-      '@types/react': 19.2.18
-      '@types/react-dom': 19.3.0(@types/react@19.2.18)
-
-  '@radix-ui/react-focus-guards@1.1.6(@types/react@19.2.18)(react@19.2.3)':
-    dependencies:
-      react: 19.2.3
-    optionalDependencies:
-      '@types/react': 19.2.18
-
-  '@radix-ui/react-focus-scope@1.1.16(@types/react-dom@19.3.0(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.3.1(react@19.2.3))(react@19.2.3)':
-    dependencies:
-      '@radix-ui/react-compose-refs': 1.1.5(@types/react@19.2.18)(react@19.2.3)
-      '@radix-ui/react-primitive': 2.1.10(@types/react-dom@19.3.0(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.3.1(react@19.2.3))(react@19.2.3)
-      '@radix-ui/react-use-callback-ref': 1.1.4(@types/react@19.2.18)(react@19.2.3)
-      react: 19.2.3
-      react-dom: 19.3.1(react@19.2.3)
-    optionalDependencies:
-      '@types/react': 19.2.18
-      '@types/react-dom': 19.3.0(@types/react@19.2.18)
 
   '@radix-ui/react-id@1.1.4(@types/react@19.2.18)(react@19.2.3)':
     dependencies:
@@ -8255,17 +8152,7 @@ snapshots:
     optionalDependencies:
       '@types/react': 19.2.18
 
-  '@radix-ui/react-portal@1.1.17(@types/react-dom@19.3.0(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.3.1(react@19.2.3))(react@19.2.3)':
-    dependencies:
-      '@radix-ui/react-primitive': 2.1.10(@types/react-dom@19.3.0(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.3.1(react@19.2.3))(react@19.2.3)
-      '@radix-ui/react-use-layout-effect': 1.1.4(@types/react@19.2.18)(react@19.2.3)
-      react: 19.2.3
-      react-dom: 19.3.1(react@19.2.3)
-    optionalDependencies:
-      '@types/react': 19.2.18
-      '@types/react-dom': 19.3.0(@types/react@19.2.18)
-
-  '@radix-ui/react-presence@1.1.10(@types/react-dom@19.3.0(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.3.1(react@19.2.3))(react@19.2.3)':
+  '@radix-ui/react-presence@1.1.11(@types/react-dom@19.3.0(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.3.1(react@19.2.3))(react@19.2.3)':
     dependencies:
       '@radix-ui/react-use-layout-effect': 1.1.4(@types/react@19.2.18)(react@19.2.3)
       react: 19.2.3
@@ -8274,26 +8161,26 @@ snapshots:
       '@types/react': 19.2.18
       '@types/react-dom': 19.3.0(@types/react@19.2.18)
 
-  '@radix-ui/react-primitive@2.1.10(@types/react-dom@19.3.0(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.3.1(react@19.2.3))(react@19.2.3)':
+  '@radix-ui/react-primitive@2.2.0(@types/react-dom@19.3.0(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.3.1(react@19.2.3))(react@19.2.3)':
     dependencies:
-      '@radix-ui/react-slot': 1.3.3(@types/react@19.2.18)(react@19.2.3)
+      '@radix-ui/react-slot': 1.5.0(@types/react@19.2.18)(react@19.2.3)
       react: 19.2.3
       react-dom: 19.3.1(react@19.2.3)
     optionalDependencies:
       '@types/react': 19.2.18
       '@types/react-dom': 19.3.0(@types/react@19.2.18)
 
-  '@radix-ui/react-roving-focus@1.1.19(@types/react-dom@19.3.0(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.3.1(react@19.2.3))(react@19.2.3)':
+  '@radix-ui/react-roving-focus@1.2.1(@types/react-dom@19.3.0(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.3.1(react@19.2.3))(react@19.2.3)':
     dependencies:
-      '@radix-ui/primitive': 1.1.7
-      '@radix-ui/react-collection': 1.1.15(@types/react-dom@19.3.0(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.3.1(react@19.2.3))(react@19.2.3)
+      '@radix-ui/primitive': 1.2.0
+      '@radix-ui/react-collection': 1.2.0(@types/react-dom@19.3.0(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.3.1(react@19.2.3))(react@19.2.3)
       '@radix-ui/react-compose-refs': 1.1.5(@types/react@19.2.18)(react@19.2.3)
-      '@radix-ui/react-context': 1.2.2(@types/react@19.2.18)(react@19.2.3)
-      '@radix-ui/react-direction': 1.1.4(@types/react@19.2.18)(react@19.2.3)
+      '@radix-ui/react-context': 1.3.0(@types/react@19.2.18)(react@19.2.3)
+      '@radix-ui/react-direction': 1.2.0(@types/react@19.2.18)(react@19.2.3)
       '@radix-ui/react-id': 1.1.4(@types/react@19.2.18)(react@19.2.3)
-      '@radix-ui/react-primitive': 2.1.10(@types/react-dom@19.3.0(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.3.1(react@19.2.3))(react@19.2.3)
-      '@radix-ui/react-use-callback-ref': 1.1.4(@types/react@19.2.18)(react@19.2.3)
-      '@radix-ui/react-use-controllable-state': 1.2.6(@types/react@19.2.18)(react@19.2.3)
+      '@radix-ui/react-primitive': 2.2.0(@types/react-dom@19.3.0(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.3.1(react@19.2.3))(react@19.2.3)
+      '@radix-ui/react-use-callback-ref': 1.1.5(@types/react@19.2.18)(react@19.2.3)
+      '@radix-ui/react-use-controllable-state': 1.3.0(@types/react@19.2.18)(react@19.2.3)
       '@radix-ui/react-use-is-hydrated': 0.1.3(@types/react@19.2.18)(react@19.2.3)
       '@radix-ui/react-use-layout-effect': 1.1.4(@types/react@19.2.18)(react@19.2.3)
       react: 19.2.3
@@ -8302,38 +8189,39 @@ snapshots:
       '@types/react': 19.2.18
       '@types/react-dom': 19.3.0(@types/react@19.2.18)
 
-  '@radix-ui/react-slot@1.3.3(@types/react@19.2.18)(react@19.2.3)':
+  '@radix-ui/react-slot@1.5.0(@types/react@19.2.18)(react@19.2.3)':
     dependencies:
       '@radix-ui/react-compose-refs': 1.1.5(@types/react@19.2.18)(react@19.2.3)
       react: 19.2.3
     optionalDependencies:
       '@types/react': 19.2.18
 
-  '@radix-ui/react-tabs@1.1.21(@types/react-dom@19.3.0(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.3.1(react@19.2.3))(react@19.2.3)':
+  '@radix-ui/react-tabs@1.2.1(@types/react-dom@19.3.0(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.3.1(react@19.2.3))(react@19.2.3)':
     dependencies:
-      '@radix-ui/primitive': 1.1.7
-      '@radix-ui/react-context': 1.2.2(@types/react@19.2.18)(react@19.2.3)
-      '@radix-ui/react-direction': 1.1.4(@types/react@19.2.18)(react@19.2.3)
+      '@radix-ui/primitive': 1.2.0
+      '@radix-ui/react-context': 1.3.0(@types/react@19.2.18)(react@19.2.3)
+      '@radix-ui/react-direction': 1.2.0(@types/react@19.2.18)(react@19.2.3)
       '@radix-ui/react-id': 1.1.4(@types/react@19.2.18)(react@19.2.3)
-      '@radix-ui/react-presence': 1.1.10(@types/react-dom@19.3.0(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.3.1(react@19.2.3))(react@19.2.3)
-      '@radix-ui/react-primitive': 2.1.10(@types/react-dom@19.3.0(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.3.1(react@19.2.3))(react@19.2.3)
-      '@radix-ui/react-roving-focus': 1.1.19(@types/react-dom@19.3.0(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.3.1(react@19.2.3))(react@19.2.3)
-      '@radix-ui/react-use-controllable-state': 1.2.6(@types/react@19.2.18)(react@19.2.3)
+      '@radix-ui/react-presence': 1.1.11(@types/react-dom@19.3.0(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.3.1(react@19.2.3))(react@19.2.3)
+      '@radix-ui/react-primitive': 2.2.0(@types/react-dom@19.3.0(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.3.1(react@19.2.3))(react@19.2.3)
+      '@radix-ui/react-roving-focus': 1.2.1(@types/react-dom@19.3.0(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.3.1(react@19.2.3))(react@19.2.3)
+      '@radix-ui/react-use-controllable-state': 1.3.0(@types/react@19.2.18)(react@19.2.3)
       react: 19.2.3
       react-dom: 19.3.1(react@19.2.3)
     optionalDependencies:
       '@types/react': 19.2.18
       '@types/react-dom': 19.3.0(@types/react@19.2.18)
 
-  '@radix-ui/react-use-callback-ref@1.1.4(@types/react@19.2.18)(react@19.2.3)':
+  '@radix-ui/react-use-callback-ref@1.1.5(@types/react@19.2.18)(react@19.2.3)':
     dependencies:
+      '@radix-ui/react-use-layout-effect': 1.1.4(@types/react@19.2.18)(react@19.2.3)
       react: 19.2.3
     optionalDependencies:
       '@types/react': 19.2.18
 
-  '@radix-ui/react-use-controllable-state@1.2.6(@types/react@19.2.18)(react@19.2.3)':
+  '@radix-ui/react-use-controllable-state@1.3.0(@types/react@19.2.18)(react@19.2.3)':
     dependencies:
-      '@radix-ui/primitive': 1.1.7
+      '@radix-ui/primitive': 1.2.0
       '@radix-ui/react-use-effect-event': 0.0.5(@types/react@19.2.18)(react@19.2.3)
       '@radix-ui/react-use-layout-effect': 1.1.4(@types/react@19.2.18)(react@19.2.3)
       react: 19.2.3
@@ -8528,6 +8416,8 @@ snapshots:
 
   '@react-native/normalize-colors@0.86.3': {}
 
+  '@react-native/normalize-colors@0.88.1': {}
+
   '@react-native/virtualized-lists@0.86.3(@types/react@19.2.18)(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)':
     dependencies:
       invariant: 2.2.4
@@ -8540,76 +8430,154 @@ snapshots:
   '@rollup/rollup-android-arm-eabi@4.63.5':
     optional: true
 
+  '@rollup/rollup-android-arm-eabi@4.68.0':
+    optional: true
+
   '@rollup/rollup-android-arm64@4.63.5':
+    optional: true
+
+  '@rollup/rollup-android-arm64@4.68.0':
+    optional: true
+
+  '@rollup/rollup-android-x64@4.68.0':
     optional: true
 
   '@rollup/rollup-darwin-arm64@4.63.5':
     optional: true
 
+  '@rollup/rollup-darwin-arm64@4.68.0':
+    optional: true
+
   '@rollup/rollup-darwin-x64@4.63.5':
+    optional: true
+
+  '@rollup/rollup-darwin-x64@4.68.0':
     optional: true
 
   '@rollup/rollup-freebsd-arm64@4.63.5':
     optional: true
 
+  '@rollup/rollup-freebsd-arm64@4.68.0':
+    optional: true
+
   '@rollup/rollup-freebsd-x64@4.63.5':
+    optional: true
+
+  '@rollup/rollup-freebsd-x64@4.68.0':
     optional: true
 
   '@rollup/rollup-linux-arm-gnueabihf@4.63.5':
     optional: true
 
+  '@rollup/rollup-linux-arm-gnueabihf@4.68.0':
+    optional: true
+
   '@rollup/rollup-linux-arm-musleabihf@4.63.5':
+    optional: true
+
+  '@rollup/rollup-linux-arm-musleabihf@4.68.0':
     optional: true
 
   '@rollup/rollup-linux-arm64-gnu@4.63.5':
     optional: true
 
+  '@rollup/rollup-linux-arm64-gnu@4.68.0':
+    optional: true
+
   '@rollup/rollup-linux-arm64-musl@4.63.5':
+    optional: true
+
+  '@rollup/rollup-linux-arm64-musl@4.68.0':
     optional: true
 
   '@rollup/rollup-linux-loong64-gnu@4.63.5':
     optional: true
 
+  '@rollup/rollup-linux-loong64-gnu@4.68.0':
+    optional: true
+
   '@rollup/rollup-linux-loong64-musl@4.63.5':
+    optional: true
+
+  '@rollup/rollup-linux-loong64-musl@4.68.0':
     optional: true
 
   '@rollup/rollup-linux-ppc64-gnu@4.63.5':
     optional: true
 
+  '@rollup/rollup-linux-ppc64-gnu@4.68.0':
+    optional: true
+
   '@rollup/rollup-linux-ppc64-musl@4.63.5':
+    optional: true
+
+  '@rollup/rollup-linux-ppc64-musl@4.68.0':
     optional: true
 
   '@rollup/rollup-linux-riscv64-gnu@4.63.5':
     optional: true
 
+  '@rollup/rollup-linux-riscv64-gnu@4.68.0':
+    optional: true
+
   '@rollup/rollup-linux-riscv64-musl@4.63.5':
+    optional: true
+
+  '@rollup/rollup-linux-riscv64-musl@4.68.0':
     optional: true
 
   '@rollup/rollup-linux-s390x-gnu@4.63.5':
     optional: true
 
+  '@rollup/rollup-linux-s390x-gnu@4.68.0':
+    optional: true
+
   '@rollup/rollup-linux-x64-gnu@4.63.5':
+    optional: true
+
+  '@rollup/rollup-linux-x64-gnu@4.68.0':
     optional: true
 
   '@rollup/rollup-linux-x64-musl@4.63.5':
     optional: true
 
+  '@rollup/rollup-linux-x64-musl@4.68.0':
+    optional: true
+
   '@rollup/rollup-openbsd-x64@4.63.5':
+    optional: true
+
+  '@rollup/rollup-openbsd-x64@4.68.0':
     optional: true
 
   '@rollup/rollup-openharmony-arm64@4.63.5':
     optional: true
 
+  '@rollup/rollup-openharmony-arm64@4.68.0':
+    optional: true
+
   '@rollup/rollup-win32-arm64-msvc@4.63.5':
+    optional: true
+
+  '@rollup/rollup-win32-arm64-msvc@4.68.0':
     optional: true
 
   '@rollup/rollup-win32-ia32-msvc@4.63.5':
     optional: true
 
+  '@rollup/rollup-win32-ia32-msvc@4.68.0':
+    optional: true
+
   '@rollup/rollup-win32-x64-gnu@4.63.5':
     optional: true
 
+  '@rollup/rollup-win32-x64-gnu@4.68.0':
+    optional: true
+
   '@rollup/rollup-win32-x64-msvc@4.63.5':
+    optional: true
+
+  '@rollup/rollup-win32-x64-msvc@4.68.0':
     optional: true
 
   '@sinclair/typebox@0.27.12': {}
@@ -8722,6 +8690,8 @@ snapshots:
   '@types/deep-eql@4.0.2': {}
 
   '@types/emscripten@1.41.6': {}
+
+  '@types/estree@1.0.10': {}
 
   '@types/estree@1.0.9': {}
 
@@ -8996,10 +8966,6 @@ snapshots:
 
   argparse@2.0.1: {}
 
-  aria-hidden@1.2.6:
-    dependencies:
-      tslib: 2.9.1
-
   asap@2.0.6: {}
 
   assertion-error@2.0.1: {}
@@ -9199,7 +9165,7 @@ snapshots:
       react-refresh: 0.14.2
     optionalDependencies:
       '@babel/runtime': 7.29.7
-      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(@expo/metro-runtime@57.0.16)(expo-router@57.0.24)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
+      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(expo-router@58.0.30)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
     transitivePeerDependencies:
       - '@babel/core'
       - supports-color
@@ -9273,7 +9239,7 @@ snapshots:
     dependencies:
       baseline-browser-mapping: 2.11.35
       caniuse-lite: 1.0.30001823
-      electron-to-chromium: 1.5.479
+      electron-to-chromium: 1.5.478
       node-releases: 2.0.63
       update-browserslist-db: 1.3.4(browserslist@4.29.5)
 
@@ -9546,8 +9512,6 @@ snapshots:
 
   decimal.js@10.6.0: {}
 
-  decode-uri-component@0.5.1: {}
-
   dedent@1.7.2: {}
 
   deepmerge@4.3.1(patch_hash=9ffdbd6fd126181f75fd99a5063c8ebb716921bc3b7f892327ef35aab951c4b8): {}
@@ -9569,8 +9533,6 @@ snapshots:
   detect-libc@2.1.2: {}
 
   detect-newline@3.1.0: {}
-
-  detect-node-es@1.1.0: {}
 
   diff-sequences@29.6.3: {}
 
@@ -9617,7 +9579,7 @@ snapshots:
 
   electron-to-chromium@1.5.442: {}
 
-  electron-to-chromium@1.5.479: {}
+  electron-to-chromium@1.5.478: {}
 
   emittery@0.13.1: {}
 
@@ -9757,7 +9719,7 @@ snapshots:
   expo-asset@57.0.18(expo@57.0.26)(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3):
     dependencies:
       '@expo/image-utils': 0.11.5(typescript@6.0.3)
-      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(@expo/metro-runtime@57.0.16)(expo-router@57.0.24)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
+      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(expo-router@58.0.30)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
       expo-constants: 57.0.20(expo@57.0.26)(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))
       react: 19.2.3
       react-native: 0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3)
@@ -9768,7 +9730,7 @@ snapshots:
   expo-camera@57.0.6(@types/emscripten@1.41.6)(expo@57.0.26)(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3):
     dependencies:
       barcode-detector: 3.2.2(@types/emscripten@1.41.6)
-      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(@expo/metro-runtime@57.0.16)(expo-router@57.0.24)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
+      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(expo-router@58.0.30)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
       react: 19.2.3
       react-native: 0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3)
     optionalDependencies:
@@ -9779,40 +9741,40 @@ snapshots:
   expo-constants@57.0.20(expo@57.0.26)(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3)):
     dependencies:
       '@expo/env': 2.4.3
-      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(@expo/metro-runtime@57.0.16)(expo-router@57.0.24)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
+      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(expo-router@58.0.30)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
       react-native: 0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3)
     transitivePeerDependencies:
       - supports-color
 
   expo-crypto@57.0.3(expo@57.0.26):
     dependencies:
-      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(@expo/metro-runtime@57.0.16)(expo-router@57.0.24)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
+      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(expo-router@58.0.30)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
 
   expo-file-system@57.0.7(expo@57.0.26)(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3)):
     dependencies:
-      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(@expo/metro-runtime@57.0.16)(expo-router@57.0.24)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
+      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(expo-router@58.0.30)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
       react-native: 0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3)
 
   expo-font@57.0.4(expo@57.0.26)(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3):
     dependencies:
-      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(@expo/metro-runtime@57.0.16)(expo-router@57.0.24)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
+      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(expo-router@58.0.30)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
       fontfaceobserver: 2.3.0
       react: 19.2.3
       react-native: 0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3)
 
-  expo-glass-effect@57.0.4(expo@57.0.26)(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3):
+  expo-glass-effect@58.0.5(expo@57.0.26)(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3):
     dependencies:
-      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(@expo/metro-runtime@57.0.16)(expo-router@57.0.24)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
+      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(expo-router@58.0.30)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
       react: 19.2.3
       react-native: 0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3)
 
   expo-haptics@57.0.3(expo@57.0.26):
     dependencies:
-      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(@expo/metro-runtime@57.0.16)(expo-router@57.0.24)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
+      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(expo-router@58.0.30)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
 
   expo-keep-awake@57.0.2(expo@57.0.26)(react@19.2.3):
     dependencies:
-      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(@expo/metro-runtime@57.0.16)(expo-router@57.0.24)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
+      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(expo-router@58.0.30)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
       react: 19.2.3
 
   expo-linking@57.0.11(expo@57.0.26)(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3):
@@ -9827,14 +9789,14 @@ snapshots:
 
   expo-localization@57.0.2(expo@57.0.26)(react@19.2.3):
     dependencies:
-      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(@expo/metro-runtime@57.0.16)(expo-router@57.0.24)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
+      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(expo-router@58.0.30)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
       react: 19.2.3
       rtl-detect: 1.1.2
 
   expo-location@57.0.20(expo@57.0.26)(typescript@6.0.3):
     dependencies:
       '@expo/image-utils': 0.11.5(typescript@6.0.3)
-      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(@expo/metro-runtime@57.0.16)(expo-router@57.0.24)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
+      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(expo-router@58.0.30)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -9863,80 +9825,67 @@ snapshots:
     dependencies:
       react-native: 0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3)
 
-  expo-router@57.0.24(4df1b54414c35a0cddb53de35cd1b061):
+  expo-router@58.0.30(5ba68bd2cc6a6bd68e0bb968d2e7d736):
     dependencies:
       '@expo/log-box': 57.0.4(@expo/dom-webview@57.0.1)(expo@57.0.26)(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)
-      '@expo/metro-runtime': 57.0.16(@expo/log-box@57.0.4)(expo@57.0.26)(react-dom@19.3.1(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)
-      '@expo/schema-utils': 57.0.2
-      '@expo/ui': 57.0.21(@babel/core@7.29.13)(@types/react-dom@19.3.0(@types/react@19.2.18))(@types/react@19.2.18)(expo@57.0.26)(react-dom@19.3.1(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)
-      '@radix-ui/react-slot': 1.3.3(@types/react@19.2.18)(react@19.2.3)
-      '@radix-ui/react-tabs': 1.1.21(@types/react-dom@19.3.0(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.3.1(react@19.2.3))(react@19.2.3)
+      '@expo/schema-utils': 58.0.3
+      '@radix-ui/react-slot': 1.5.0(@types/react@19.2.18)(react@19.2.3)
+      '@radix-ui/react-tabs': 1.2.1(@types/react-dom@19.3.0(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.3.1(react@19.2.3))(react@19.2.3)
       '@react-native-masked-view/masked-view': 0.3.2(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)
+      '@react-native/normalize-colors': 0.88.1
       client-only: 0.0.1
-      color: 4.2.3
-      debug: 4.4.3
-      escape-string-regexp: 4.0.0
-      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(@expo/metro-runtime@57.0.16)(expo-router@57.0.24)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
+      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(expo-router@58.0.30)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
       expo-constants: 57.0.20(expo@57.0.26)(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))
-      expo-glass-effect: 57.0.4(expo@57.0.26)(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)
+      expo-glass-effect: 58.0.5(expo@57.0.26)(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)
       expo-linking: 57.0.11(expo@57.0.26)(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)
-      expo-server: 57.0.3
-      expo-symbols: 57.0.3(expo-font@57.0.4)(expo@57.0.26)(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)
-      fast-deep-equal: 3.1.3
-      invariant: 2.2.4
-      nanoid: 3.3.19
-      query-string: 7.1.3
+      expo-server: 58.0.6
+      expo-status-bar: 58.0.4(expo@57.0.26)(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)
+      nanoid: 3.3.20
       react: 19.2.3
       react-fast-compare: 3.2.2
-      react-is: 19.3.0
+      react-is: 19.3.1
       react-native: 0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3)
-      react-native-drawer-layout: 4.2.11(c74c64a35a99d0e981470a29ac3aa465)
+      react-native-drawer-layout: 4.2.12(c74c64a35a99d0e981470a29ac3aa465)
       react-native-safe-area-context: 5.7.0(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)
       react-native-screens: 4.26.2(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)
       server-only: 0.0.1
       sf-symbols-typescript: 2.2.0
-      shallowequal: 1.1.0
       standard-navigation: 0.0.5
-      vaul: 1.1.2(@types/react-dom@19.3.0(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.3.1(react@19.2.3))(react@19.2.3)
     optionalDependencies:
       '@testing-library/react-native': 14.0.1(jest@30.5.2(@types/node@22.20.4))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(test-renderer@1.3.0(@types/react@19.2.18)(react@19.2.3))
       react-dom: 19.3.1(react@19.2.3)
       react-native-gesture-handler: 3.3.0(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)
       react-native-reanimated: 4.7.0(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)
       react-native-web: 0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3)
+      react-native-worklets: 0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)
     transitivePeerDependencies:
-      - '@babel/core'
       - '@types/react'
       - '@types/react-dom'
-      - expo-font
-      - react-native-worklets
-      - supports-color
 
   expo-secure-store@58.0.2(expo@57.0.26):
     dependencies:
-      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(@expo/metro-runtime@57.0.16)(expo-router@57.0.24)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
+      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(expo-router@58.0.30)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
 
   expo-server@57.0.3: {}
 
+  expo-server@58.0.6: {}
+
   expo-status-bar@57.0.1(expo@57.0.26)(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3):
     dependencies:
-      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(@expo/metro-runtime@57.0.16)(expo-router@57.0.24)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
+      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(expo-router@58.0.30)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
       react: 19.2.3
       react-native: 0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3)
 
-  expo-symbols@57.0.3(expo-font@57.0.4)(expo@57.0.26)(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3):
+  expo-status-bar@58.0.4(expo@57.0.26)(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3):
     dependencies:
-      '@expo-google-fonts/material-symbols': 0.4.48
-      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(@expo/metro-runtime@57.0.16)(expo-router@57.0.24)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
-      expo-font: 57.0.4(expo@57.0.26)(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)
+      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(expo-router@58.0.30)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
       react: 19.2.3
       react-native: 0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3)
-      sf-symbols-typescript: 2.2.0
 
-  expo@57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(@expo/metro-runtime@57.0.16)(expo-router@57.0.24)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3):
+  expo@57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(expo-router@58.0.30)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3):
     dependencies:
       '@babel/runtime': 7.29.7
-      '@expo/cli': 57.0.27(@expo/dom-webview@57.0.1)(@expo/metro-runtime@57.0.16)(expo-constants@57.0.20)(expo-font@57.0.4)(expo-router@57.0.24)(expo@57.0.26)(react-dom@19.3.1(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
+      '@expo/cli': 57.0.27(@expo/dom-webview@57.0.1)(expo-constants@57.0.20)(expo-font@57.0.4(expo@57.0.26)(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(expo-router@58.0.30)(expo@57.0.26)(react-dom@19.3.1(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
       '@expo/config': 57.0.9(typescript@6.0.3)
       '@expo/config-plugins': 57.0.9(typescript@6.0.3)
       '@expo/devtools': 57.0.1(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)
@@ -9961,7 +9910,6 @@ snapshots:
       whatwg-url-minimum: 0.1.2
     optionalDependencies:
       '@expo/dom-webview': 57.0.1(expo@57.0.26)(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)
-      '@expo/metro-runtime': 57.0.16(@expo/log-box@57.0.4)(expo@57.0.26)(react-dom@19.3.1(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)
       react-dom: 19.3.1(react@19.2.3)
       react-native-web: 0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3)
     transitivePeerDependencies:
@@ -10058,8 +10006,6 @@ snapshots:
     dependencies:
       to-regex-range: 5.0.1
 
-  filter-obj@1.1.0: {}
-
   finalhandler@1.1.2:
     dependencies:
       debug: 2.6.9
@@ -10132,8 +10078,6 @@ snapshots:
       has-symbols: 1.1.0
       hasown: 2.0.4
       math-intrinsics: 1.1.0
-
-  get-nonce@1.0.1: {}
 
   get-package-type@0.1.0: {}
 
@@ -10519,7 +10463,7 @@ snapshots:
       server-only: 0.0.1
       stacktrace-js: 2.0.2
     optionalDependencies:
-      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(@expo/metro-runtime@57.0.16)(expo-router@57.0.24)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
+      expo: 57.0.26(@babel/core@7.29.13)(@expo/dom-webview@57.0.1)(expo-router@58.0.30)(react-dom@19.3.1(react@19.2.3))(react-native-web@0.21.3(react-dom@19.3.1(react@19.2.3))(react@19.2.3))(react-native-worklets@0.13.0(@babel/core@7.29.13)(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3))(react-native@0.86.3(@babel/core@7.29.13)(@react-native/jest-preset@0.86.3(@babel/core@7.29.13)(react@19.2.3))(@react-native/metro-config@0.87.1(@babel/core@7.29.13))(@types/react@19.2.18)(react@19.2.3))(react@19.2.3)(typescript@6.0.3)
     transitivePeerDependencies:
       - '@babel/core'
       - bufferutil
@@ -11626,8 +11570,6 @@ snapshots:
       object-assign: 4.1.1
       thenify-all: 1.6.0
 
-  nanoid@3.3.19: {}
-
   nanoid@3.3.20: {}
 
   napi-postinstall@0.3.4: {}
@@ -11995,13 +11937,6 @@ snapshots:
       pngjs: 5.0.0
       yargs: 15.4.1
 
-  query-string@7.1.3:
-    dependencies:
-      decode-uri-component: 0.5.1
-      filter-obj: 1.1.0
-      split-on-first: 1.1.0
-      strict-uri-encode: 2.0.0
-
   querystringify@2.2.0: {}
 
   quick-format-unescaped@4.0.4: {}
@@ -12031,11 +11966,9 @@ snapshots:
 
   react-is@18.3.1: {}
 
-  react-is@19.3.0: {}
-
   react-is@19.3.1: {}
 
-  react-native-drawer-layout@4.2.11(c74c64a35a99d0e981470a29ac3aa465):
+  react-native-drawer-layout@4.2.12(c74c64a35a99d0e981470a29ac3aa465):
     dependencies:
       color: 4.2.3
       react: 19.2.3
@@ -12186,33 +12119,6 @@ snapshots:
 
   react-refresh@0.14.2: {}
 
-  react-remove-scroll-bar@2.3.8(@types/react@19.2.18)(react@19.2.3):
-    dependencies:
-      react: 19.2.3
-      react-style-singleton: 2.2.3(@types/react@19.2.18)(react@19.2.3)
-      tslib: 2.9.1
-    optionalDependencies:
-      '@types/react': 19.2.18
-
-  react-remove-scroll@2.7.2(@types/react@19.2.18)(react@19.2.3):
-    dependencies:
-      react: 19.2.3
-      react-remove-scroll-bar: 2.3.8(@types/react@19.2.18)(react@19.2.3)
-      react-style-singleton: 2.2.3(@types/react@19.2.18)(react@19.2.3)
-      tslib: 2.9.1
-      use-callback-ref: 1.3.3(@types/react@19.2.18)(react@19.2.3)
-      use-sidecar: 1.1.3(@types/react@19.2.18)(react@19.2.3)
-    optionalDependencies:
-      '@types/react': 19.2.18
-
-  react-style-singleton@2.2.3(@types/react@19.2.18)(react@19.2.3):
-    dependencies:
-      get-nonce: 1.0.1
-      react: 19.2.3
-      tslib: 2.9.1
-    optionalDependencies:
-      '@types/react': 19.2.18
-
   react-test-renderer@19.2.3(react@19.2.3):
     dependencies:
       react: 19.2.3
@@ -12329,6 +12235,38 @@ snapshots:
       '@rollup/rollup-win32-x64-msvc': 4.63.5
       fsevents: 2.3.3
 
+  rollup@4.68.0:
+    dependencies:
+      '@types/estree': 1.0.10
+    optionalDependencies:
+      '@rollup/rollup-android-arm-eabi': 4.68.0
+      '@rollup/rollup-android-arm64': 4.68.0
+      '@rollup/rollup-android-x64': 4.68.0
+      '@rollup/rollup-darwin-arm64': 4.68.0
+      '@rollup/rollup-darwin-x64': 4.68.0
+      '@rollup/rollup-freebsd-arm64': 4.68.0
+      '@rollup/rollup-freebsd-x64': 4.68.0
+      '@rollup/rollup-linux-arm-gnueabihf': 4.68.0
+      '@rollup/rollup-linux-arm-musleabihf': 4.68.0
+      '@rollup/rollup-linux-arm64-gnu': 4.68.0
+      '@rollup/rollup-linux-arm64-musl': 4.68.0
+      '@rollup/rollup-linux-loong64-gnu': 4.68.0
+      '@rollup/rollup-linux-loong64-musl': 4.68.0
+      '@rollup/rollup-linux-ppc64-gnu': 4.68.0
+      '@rollup/rollup-linux-ppc64-musl': 4.68.0
+      '@rollup/rollup-linux-riscv64-gnu': 4.68.0
+      '@rollup/rollup-linux-riscv64-musl': 4.68.0
+      '@rollup/rollup-linux-s390x-gnu': 4.68.0
+      '@rollup/rollup-linux-x64-gnu': 4.68.0
+      '@rollup/rollup-linux-x64-musl': 4.68.0
+      '@rollup/rollup-openbsd-x64': 4.68.0
+      '@rollup/rollup-openharmony-arm64': 4.68.0
+      '@rollup/rollup-win32-arm64-msvc': 4.68.0
+      '@rollup/rollup-win32-ia32-msvc': 4.68.0
+      '@rollup/rollup-win32-x64-gnu': 4.68.0
+      '@rollup/rollup-win32-x64-msvc': 4.68.0
+      fsevents: 2.3.3
+
   rtl-detect@1.1.2: {}
 
   safe-buffer@5.2.1: {}
@@ -12401,8 +12339,6 @@ snapshots:
   setprototypeof@1.2.0: {}
 
   sf-symbols-typescript@2.2.0: {}
-
-  shallowequal@1.1.0: {}
 
   sharp@0.35.5(@types/node@22.20.4):
     dependencies:
@@ -12489,8 +12425,6 @@ snapshots:
 
   source-map@0.7.6: {}
 
-  split-on-first@1.1.0: {}
-
   split2@4.2.0: {}
 
   sprintf-js@1.0.3: {}
@@ -12535,8 +12469,6 @@ snapshots:
   stream-buffers@2.2.0: {}
 
   stream-shift@1.0.3: {}
-
-  strict-uri-encode@2.0.0: {}
 
   string-length@4.0.2:
     dependencies:
@@ -12837,24 +12769,9 @@ snapshots:
       querystringify: 2.2.0
       requires-port: 1.0.0
 
-  use-callback-ref@1.3.3(@types/react@19.2.18)(react@19.2.3):
-    dependencies:
-      react: 19.2.3
-      tslib: 2.9.1
-    optionalDependencies:
-      '@types/react': 19.2.18
-
   use-latest-callback@0.2.6(react@19.2.3):
     dependencies:
       react: 19.2.3
-
-  use-sidecar@1.1.3(@types/react@19.2.18)(react@19.2.3):
-    dependencies:
-      detect-node-es: 1.1.0
-      react: 19.2.3
-      tslib: 2.9.1
-    optionalDependencies:
-      '@types/react': 19.2.18
 
   util-deprecate@1.0.2: {}
 
@@ -12872,22 +12789,13 @@ snapshots:
 
   vary@1.1.2: {}
 
-  vaul@1.1.2(@types/react-dom@19.3.0(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.3.1(react@19.2.3))(react@19.2.3):
-    dependencies:
-      '@radix-ui/react-dialog': 1.1.23(@types/react-dom@19.3.0(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.3.1(react@19.2.3))(react@19.2.3)
-      react: 19.2.3
-      react-dom: 19.3.1(react@19.2.3)
-    transitivePeerDependencies:
-      - '@types/react'
-      - '@types/react-dom'
-
   vite@7.3.7(@types/node@22.20.4)(lightningcss@1.33.0)(terser@5.51.2)(tsx@4.23.15)(yaml@2.9.1):
     dependencies:
       esbuild: 0.28.2
       fdir: 6.5.0(picomatch@4.0.7)
       picomatch: 4.0.7
       postcss: 8.5.32
-      rollup: 4.63.5
+      rollup: 4.68.0
       tinyglobby: 0.2.17
     optionalDependencies:
       '@types/node': 22.20.4
