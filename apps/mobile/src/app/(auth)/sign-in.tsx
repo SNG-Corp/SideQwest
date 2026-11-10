@@ -11,7 +11,7 @@ import { metrics } from '../../platform/adaptive';
 import { useT } from '../../i18n/useT';
 import { api, ApiError } from '../../lib/api';
 import { useSession } from '../../lib/session';
-import { Heading, Body, Field, PrimaryButton, Chip, Eyebrow, Notice } from '../../components/ui';
+import { Heading, Body, Field, PrimaryButton, SecondaryButton, Chip, Eyebrow, Notice } from '../../components/ui';
 
 export default function SignIn() {
   const T = useT();
@@ -76,6 +76,11 @@ export default function SignIn() {
           </>
         )}
         {error ? <Notice>{error}</Notice> : null}
+        <View style={{ flexDirection: 'row', gap: 8 }}>
+          <SecondaryButton label={T('profile.privacy')} onPress={() => router.push('/legal/privacy')} />
+          <SecondaryButton label={T('profile.terms')} onPress={() => router.push('/legal/terms')} />
+          <SecondaryButton label={T('profile.support')} onPress={() => router.push('/legal/support')} />
+        </View>
       </ScrollView>
     </KeyboardAvoidingView>
   );

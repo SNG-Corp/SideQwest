@@ -54,6 +54,15 @@ export function ProfileScreen() {
           onPress={() => patch({ role: me.role === 'runner' ? 'requester' : 'runner' })}
         />
       </View>
+      <Eyebrow style={{ marginTop: 6 }}>{T('profile.account_and_help')}</Eyebrow>
+      <View style={{ flexDirection: 'row', gap: 8 }}>
+        <SecondaryButton label={T('profile.privacy')} onPress={() => router.push('/legal/privacy')} />
+        <SecondaryButton label={T('profile.terms')} onPress={() => router.push('/legal/terms')} />
+      </View>
+      <View style={{ flexDirection: 'row', gap: 8 }}>
+        <SecondaryButton label={T('profile.support')} onPress={() => router.push('/legal/support')} />
+        <SecondaryButton label={T('profile.delete_account')} onPress={() => router.push('/legal/delete-account')} />
+      </View>
       <View style={{ flexDirection: 'row', marginTop: 12 }}>
         <SecondaryButton label={T('profile.sign_out')} onPress={async () => {
           await api.post('/auth/logout').catch(() => undefined);
