@@ -1,92 +1,37 @@
-# Contributing
+# Contributing to Side Qwest
 
-Thanks for your interest in contributing to Side Qwest.
+Thanks for considering a contribution. Contributions are welcome, but please note that this is an MVP and not a production-ready payment or KYC service.
 
-We welcome contributions in code, design feedback, testing, documentation, security review, and issue triage.
+## Before starting
+
+- Read the root README and relevant current code/docs. Historical design handoff documents may not match the implementation.
+- For substantial changes, open an issue or discussion first so scope and constraints can be agreed.
+- Do not submit real personal data, identity documents, payment credentials, or production secrets in code, tests, issues, or screenshots.
 
 ## Development setup
 
-1. Install Node 22 and pnpm 10.
-2. Clone the repository.
-3. Install dependencies:
+Requirements: Node.js 22, pnpm 10, Postgres 16 with PostGIS and H3, Redis 7. Follow the [README setup](README.md#local-development). The local environment uses development-only payment, SMS, issuer, and storage adapters.
 
-```bash
-pnpm install
-```
+Before opening a PR, run:
 
-4. Generate a local `.env` file:
-
-```bash
-node scripts/dev-env.mjs
-```
-
-5. Run the database migrations:
-
-```bash
-pnpm migrate:up
-```
-
-6. Start the app stack in development mode:
-
-```bash
-pnpm dev:api
-pnpm dev:worker
-pnpm dev:console
-pnpm dev:mobile
-```
-
-## Branching
-
-- Use `main` for the stable branch.
-- Create feature branches from `main`.
-- Use names like:
-  - `feature/...`
-  - `fix/...`
-  - `docs/...`
-  - `chore/...`
-  - `refactor/...`
-
-## Pull requests
-
-- Keep changes focused.
-- Include tests for bug fixes and behavior changes.
-- Run the verification commands before opening a PR:
-
-```bash
+```sh
+pnpm install --frozen-lockfile
 pnpm verify
 ```
 
-- Add a clear summary of the problem and the fix.
-- Explain how the change was validated.
+Database changes should also be tested with `pnpm db:gates` against a disposable test database. Never edit a migration that has already been applied in a shared or production environment; add a new migration instead.
 
-## Commit message format
+## Pull requests
 
-We recommend Conventional Commits:
+- Branch from `main` and keep each PR focused.
+- Explain user impact, risk, and the test evidence in the PR description.
+- Include regression tests for behavior or security fixes.
+- For money, identity, or location changes, describe failure modes and data-handling implications.
+- Do not include generated native build output, secrets, customer data, or unrelated formatting churn.
+- All required checks and review rules configured on the repository apply before merge.
 
-- `feat: ...`
-- `fix: ...`
-- `docs: ...`
-- `chore: ...`
-- `refactor: ...`
-- `test: ...`
+Conventional Commit prefixes are encouraged (`feat:`, `fix:`, `docs:`, `test:`, `chore:`), but are not currently enforced by automation.
 
-## Coding standards
+## Security reports
 
-- Prefer TypeScript strict typing.
-- Keep database migrations reviewable and explicit.
-- Do not bypass existing security and RLS boundaries.
-- Respect the project’s money-path correctness rules.
-
-## Reporting issues
-
-Before creating an issue, check whether the bug or request already exists.
-
-Use the issue templates in `.github/ISSUE_TEMPLATE/`.
-
-## Community expectations
-
-Please be respectful, constructive, and considerate across discussions and code reviews.
-
-## Questions
-
-If you are unsure where to start, open a discussion or reach out through the support channels in [SUPPORT.md](./SUPPORT.md).
+Do not file a public issue for a suspected vulnerability. Follow [SECURITY.md](SECURITY.md).

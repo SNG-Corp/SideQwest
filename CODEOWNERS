@@ -1,11 +1,11 @@
+# Maintainers
+
 * @Apekay2
-.github/ @Apekay2
-apps/api/ @Apekay2
-apps/console/ @Apekay2
-apps/mobile/ @Apekay2
-apps/worker/ @Apekay2
-packages/db/ @Apekay2
-packages/domain/ @Apekay2
-packages/config/ @Apekay2
-packages/adapters/ @Apekay2
-packages/observability/ @Apekay2
+
+# Sensitive areas
+/apps/api/ @Apekay2
+/apps/mobile/ @Apekay2
+/apps/console/ @Apekay2
+/apps/worker/ @Apekay2
+/packages/db/ @Apekay2
+/packages/config/ @Apekay2

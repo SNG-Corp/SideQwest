@@ -1,31 +1,20 @@
 # Code of Conduct
 
-We are committed to providing a welcoming, respectful, and harassment-free experience for everyone.
+## Our commitment
 
-## Our standards
+We want participation in Side Qwest to be welcoming and respectful, regardless of background, identity, experience, or viewpoint.
 
-Examples of behavior that helps build a positive environment include:
+## Expected behavior
 
-- being kind and respectful
-- giving constructive feedback
-- accepting responsibility and learning from mistakes
-- focusing on what is best for the community
+- Be respectful, constructive, and considerate.
+- Focus criticism on ideas and code, not people.
+- Accept feedback gracefully and help keep discussions useful.
+- Protect personal and sensitive information; never publish another person's data without permission.
 
-Examples of unacceptable behavior include:
+## Unacceptable behavior
 
-- harassment, intimidation, or discrimination
-- insulting or demeaning comments
-- personal attacks or trolling
-- unwanted sexual attention or conduct
+Harassment, discrimination, threats, personal attacks, doxxing, unwanted sexual attention, and deliberately disruptive conduct are not acceptable.
 
 ## Enforcement
 
-Project maintainers are responsible for clarifying standards and may take corrective action when behavior is inappropriate.
-
-Violations may result in warnings, temporary limits, or removal from the project community.
-
-## Contact
-
-If you are subject to or witness unacceptable behavior, contact the maintainers through the project support channels or the repository administrators.
-
-This project follows the spirit of the Contributor Covenant.
+Repository maintainers may edit or remove content and may limit or remove participation for conduct that violates these standards. To report an incident, contact the repository owner privately through the [SNG-Corp organization](https://github.com/SNG-Corp). For security issues, follow [SECURITY.md](SECURITY.md).

@@ -1,4 +1,4 @@
-# Mobile release readiness checklist
+# Mobile release readiness
 
 This checklist is an engineering gate, not evidence that the app is already approved or production-ready. Complete each item for the exact release commit and signed artifacts.
 
