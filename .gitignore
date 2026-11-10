@@ -1,16 +1,36 @@
+# Side Qwest local and generated files
 node_modules/
 dist/
+coverage/
+*.log
+*.tsbuildinfo
+
+# Environment files: retain only the safe example template
 .env
 .env.*
 !.env.example
+
+# Tool and framework caches
 .turbo/
 .expo/
 .next/
-coverage/
-*.log
+.pnpm-store/
+.metro-cache/
+
+# Native build output (Expo prebuild may regenerate these)
 apps/mobile/ios/
 apps/mobile/android/
-dump.rdb
+
+# Local data and database artifacts
 .data/
-next-env.d.ts
-*.tsbuildinfo
+dump.rdb
+*.sqlite
+*.sqlite3
+*.db
+*.sql.gz
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

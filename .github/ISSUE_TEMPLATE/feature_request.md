@@ -1,44 +1,15 @@
 ---
 name: Feature request
-<<<<<< audit/community-readiness
-about: Suggest an idea or enhancement
-title: ""
+about: Propose a focused improvement
+ title: ""
 labels: ["enhancement"]
 assignees: ""
 ---
 
 ## Problem
 
-What problem are you trying to solve?
+## Proposed change
 
-## Proposed solution
+## Who benefits and how?
 
-Describe the approach.
-
-## Alternatives considered
-
-What else did you consider?
-
-## Impact
-
-Who benefits and why?
-=======
-about: Suggest an idea for this project
-title: ''
-labels: ''
-assignees: ''
-
----
-
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
-
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
-
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
-
-**Additional context**
-Add any other context or screenshots about the feature request here.
->>>>>> main
+## Risks or alternatives

@@ -1,32 +1,15 @@
 # Security Policy
 
-We take security seriously and appreciate responsible disclosure.
-
 ## Supported versions
 
-We currently support the latest `main` branch and the latest tagged release.
+This project is an MVP. The maintainers make no promise of a supported production release or service-level response time. Report issues against the latest `main` branch and include the commit or release identifier where possible.
 
-## Reporting a vulnerability
+## Report a vulnerability privately
 
-Please do not report security bugs in public issues or pull requests.
+Please do not publish exploit details, personal data, or payment/KYC information in a public issue. If GitHub's **Report a vulnerability** option is enabled for this repository, use it to create a private report. Otherwise, contact the repository owner through the [SNG-Corp organization](https://github.com/SNG-Corp) and request a private security-reporting channel before sending technical details.
 
-Use one of the following:
+Include the affected component, impact, reproducible steps, and any safe mitigation. Do not include live credentials or real user data.
 
-- GitHub Security Advisories for private reporting
-- Email: `security@sidequest.co.ke` (replace this with your monitored inbox)
+## Response and disclosure
 
-Please include:
-
-- a description of the vulnerability
-- steps to reproduce it
-- affected component or endpoint
-- impact and severity
-- any suggested mitigation
-
-## Response expectations
-
-We aim to acknowledge reports within 5 business days and to work toward a coordinated fix as quickly as possible.
-
-## Disclosure policy
-
-Please give the maintainer time to assess and remedy the issue before public disclosure. We appreciate responsible reporting.
+The maintainers will acknowledge and coordinate reports on a best-effort basis. Please allow time for investigation and a fix before public disclosure. No response-time SLA is currently offered.
