@@ -48,7 +48,7 @@
     "@types/react": "~19.3.0",
     "jest": "^30.5.2",
     "jest-expo": "~57.0.5",
-    "typescript": "~6.0.3"
+    "typescript": "~7.0.2"
   },
   "jest": {
     "projects": [
