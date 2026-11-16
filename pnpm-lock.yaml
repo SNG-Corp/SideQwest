@@ -314,8 +314,8 @@ importers:
         specifier: ~58.0.15
         version: 58.0.15(expo@57.0.26)(react-native@0.86.3(@babel/core@7.29.13(supports-color@8.1.1))(@react-native/jest-preset@0.86.3(@babel/core@7.29.13(supports-color@8.1.1))(react@19.3.1)(supports-color@8.1.1))(@react-native/metro-config@0.87.1(@babel/core@7.29.13(supports-color@8.1.1))(supports-color@8.1.1))(@types/react@19.3.0)(react@19.3.1)(supports-color@8.1.1))(supports-color@8.1.1)(typescript@7.0.2)
       expo-crypto:
-        specifier: ~57.0.3
-        version: 57.0.3(expo@57.0.26)
+        specifier: ~58.0.8
+        version: 58.0.8(expo@57.0.26)
       expo-font:
         specifier: ~57.0.4
         version: 57.0.4(expo@57.0.26)(react-native@0.86.3(@babel/core@7.29.13(supports-color@8.1.1))(@react-native/jest-preset@0.86.3(@babel/core@7.29.13(supports-color@8.1.1))(react@19.3.1)(supports-color@8.1.1))(@react-native/metro-config@0.87.1(@babel/core@7.29.13(supports-color@8.1.1))(supports-color@8.1.1))(@types/react@19.3.0)(react@19.3.1)(supports-color@8.1.1))(react@19.3.1)
@@ -3805,8 +3805,8 @@ packages:
       expo: '*'
       react-native: '*'
 
-  expo-crypto@57.0.3:
-    resolution: {integrity: sha512-SAWqEfF37nc8ot7bXsVmu9AFYwQdC2kGvH/eNAHiR3bmlcf1Vv8wu9AnGKT+a90r3T8YfwMpZP4QAYlo4vCn9w==}
+  expo-crypto@58.0.8:
+    resolution: {integrity: sha512-yMSiMlallOweQ28oQ3BqJf6I/4ZoBggFNRg+PfjG1NbQWBWzGKmkPPUrd3yT0oPW4P+AYppg+Mw6xoAYddLUKA==}
     peerDependencies:
       expo: '*'
 
@@ -9989,7 +9989,7 @@ snapshots:
       - supports-color
       - typescript
 
-  expo-crypto@57.0.3(expo@57.0.26):
+  expo-crypto@58.0.8(expo@57.0.26):
     dependencies:
       expo: 57.0.26(936b1337920a36a2c5b291315ba81f16)
 
