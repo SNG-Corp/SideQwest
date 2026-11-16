@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@fastify/cookie": "^11.1.5",
-    "@fastify/websocket": "^11.3.1",
+    "@fastify/websocket": "^11.3.7",
     "@sidequest/adapters": "workspace:*",
     "@sidequest/config": "workspace:*",
     "@sidequest/contracts": "workspace:*",
